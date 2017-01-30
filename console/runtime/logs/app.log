@@ -1,0 +1,216 @@
+2017-01-06 14:21:50 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php:602
+Stack trace:
+#0 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php(602): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php(544): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#3 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Schema.php(147): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\controllers\MigrateController.php(199): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(771): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(135): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\xampp\htdocs\pf_portofolio\yii(27): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php:549
+Stack trace:
+#0 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#1 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Schema.php(147): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\controllers\MigrateController.php(199): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(771): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(135): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#15 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\xampp\htdocs\pf_portofolio\yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2017-01-06 14:21:49 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Muhammad Masruhin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'FIRSTALLIUM-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'C_EM64T_REDIST11' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Muhammad Masruhin'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_60'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jre1.8.0_111'
+    'LOCALAPPDATA' => 'C:\\Users\\Muhammad Masruhin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\FIRSTALLIUM-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'F:\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Muhammad Masruhin\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.0'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'FIRSTALLIUM-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'FIRSTALLIUM-PC'
+    'USERNAME' => 'Muhammad Masruhin'
+    'USERPROFILE' => 'C:\\Users\\Muhammad Masruhin'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1483708909.0035
+    'REQUEST_TIME' => 1483708909
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-01-06 14:22:22 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php:602
+Stack trace:
+#0 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php(602): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php(544): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#3 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Schema.php(147): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\controllers\MigrateController.php(199): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(771): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(135): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 C:\xampp\htdocs\pf_portofolio\yii(27): yii\base\Application->run()
+#22 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1049] Unknown database 'yii2advanced' in C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php:549
+Stack trace:
+#0 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#1 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\mysql\Schema.php(198): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\mysql\Schema.php(97): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\db\Schema.php(147): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\controllers\MigrateController.php(199): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(771): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(135): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#14 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#15 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\Module.php(454): yii\console\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 C:\xampp\htdocs\pf_portofolio\vendor\yiisoft\yii2\base\Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 C:\xampp\htdocs\pf_portofolio\yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2017-01-06 14:22:22 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Muhammad Masruhin\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'FIRSTALLIUM-PC'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'C_EM64T_REDIST11' => 'C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Muhammad Masruhin'
+    'JAVA_HOME' => 'C:\\Program Files\\Java\\jdk1.8.0_60'
+    'JRE_HOME' => 'C:\\Program Files\\Java\\jre1.8.0_111'
+    'LOCALAPPDATA' => 'C:\\Users\\Muhammad Masruhin\\AppData\\Local'
+    'LOGONSERVER' => '\\\\FIRSTALLIUM-PC'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'F:\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Users\\Muhammad Masruhin\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 58 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3a09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.0'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'FIRSTALLIUM-PC'
+    'USERDOMAIN_ROAMINGPROFILE' => 'FIRSTALLIUM-PC'
+    'USERNAME' => 'Muhammad Masruhin'
+    'USERPROFILE' => 'C:\\Users\\Muhammad Masruhin'
+    'VS140COMNTOOLS' => 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+    'windir' => 'C:\\WINDOWS'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1483708942.8452
+    'REQUEST_TIME' => 1483708942
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]

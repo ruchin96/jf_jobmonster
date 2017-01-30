@@ -1,0 +1,1025 @@
+Message-ID: <96d40496cacb57e4b22a869a2df4a02c@localhost>
+Date: Thu, 19 Jan 2017 20:20:54 +0100
+Subject: Signup Confirmation
+From: Support Job Monster <jobmonster.cs@gmail.com>
+To: czarz.aquariuz@gmail.com
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+        <head>
+            <style type=3D"text/css">                   =20
+                #outlook a {=20
+                  padding:0;=20
+                }=20
+               =20
+                body{=20
+                  width:100% !important;=20
+                  min-width: 100%;
+                  -webkit-text-size-adjust:100%;=20
+                  -ms-text-size-adjust:100%;=20
+                  margin:0;=20
+                  padding:0;
+                }
+               =20
+                .ExternalClass {=20
+                  width:100%;
+                }=20
+               =20
+                .ExternalClass,=20
+                .ExternalClass p,=20
+                .ExternalClass span,=20
+                .ExternalClass font,=20
+                .ExternalClass td,=20
+                .ExternalClass div {=20
+                  line-height: 100%;=20
+                }=20
+               =20
+                #backgroundTable {=20
+                  margin:0;=20
+                  padding:0;=20
+                  width:100% !important;=20
+                  line-height: 100% !important;=20
+                }
+               =20
+                img {=20
+                  outline:none;=20
+                  text-decoration:none;=20
+                  -ms-interpolation-mode: bicubic;
+                  width: auto;
+                  max-width: 100%;=20
+                  float: left;=20
+                  clear: both;=20
+                  display: block;
+                }
+               =20
+                center {
+                  width: 100%;
+                  min-width: 580px;
+                }
+               =20
+                a img {=20
+                  border: none;
+                }
+               =20
+                p {
+                  margin: 0 0 0 10px;
+                }
+               =20
+                table {
+                  border-spacing: 0;
+                  border-collapse: collapse;
+                }
+               =20
+                td {=20
+                  word-break: break-word;
+                  -webkit-hyphens: auto;
+                  -moz-hyphens: auto;
+                  hyphens: auto;
+                  border-collapse: collapse !important;=20
+                }
+               =20
+                table, tr, td {
+                  padding: 0;
+                  vertical-align: top;
+                  text-align: left;
+                }
+               =20
+                hr {
+                  color: #d9d9d9;=20
+                  background-color: #d9d9d9;=20
+                  height: 1px;=20
+                  border: none;
+                }
+               =20
+                /* Responsive Grid */
+               =20
+                table.body {
+                  height: 100%;
+                  width: 100%;
+                }
+               =20
+                table.container {
+                  width: 580px;
+                  margin: 0 auto;
+                  text-align: inherit;
+                }
+               =20
+                table.row {=20
+                  padding: 0px;=20
+                  width: 100%;
+                  position: relative;
+                }
+               =20
+                table.container table.row {
+                  display: block;
+                }
+               =20
+                td.wrapper {
+                  padding: 10px 20px 0px 0px;
+                  position: relative;
+                }
+               =20
+                table.columns,
+                table.column {
+                  margin: 0 auto;
+                }
+               =20
+                table.columns td,
+                table.column td {
+                  padding: 0px 0px 10px;=20
+                }
+               =20
+                table.columns td.sub-columns,
+                table.column td.sub-columns,
+                table.columns td.sub-column,
+                table.column td.sub-column {
+                  padding-right: 10px;
+                }
+               =20
+                td.sub-column, td.sub-columns {
+                  min-width: 0px;
+                }
+               =20
+                table.row td.last,
+                table.container td.last {
+                  padding-right: 0px;
+                }
+               =20
+                table.one { width: 30px; }
+                table.two { width: 80px; }
+                table.three { width: 130px; }
+                table.four { width: 180px; }
+                table.five { width: 230px; }
+                table.six { width: 280px; }
+                table.seven { width: 330px; }
+                table.eight { width: 380px; }
+                table.nine { width: 430px; }
+                table.ten { width: 480px; }
+                table.eleven { width: 530px; }
+                table.twelve { width: 580px; }
+               =20
+                table.one center { min-width: 30px; }
+                table.two center { min-width: 80px; }
+                table.three center { min-width: 130px; }
+                table.four center { min-width: 180px; }
+                table.five center { min-width: 230px; }
+                table.six center { min-width: 280px; }
+                table.seven center { min-width: 330px; }
+                table.eight center { min-width: 380px; }
+                table.nine center { min-width: 430px; }
+                table.ten center { min-width: 480px; }
+                table.eleven center { min-width: 530px; }
+                table.twelve center { min-width: 580px; }
+               =20
+                table.one .panel center { min-width: 10px; }
+                table.two .panel center { min-width: 60px; }
+                table.three .panel center { min-width: 110px; }
+                table.four .panel center { min-width: 160px; }
+                table.five .panel center { min-width: 210px; }
+                table.six .panel center { min-width: 260px; }
+                table.seven .panel center { min-width: 310px; }
+                table.eight .panel center { min-width: 360px; }
+                table.nine .panel center { min-width: 410px; }
+                table.ten .panel center { min-width: 460px; }
+                table.eleven .panel center { min-width: 510px; }
+                table.twelve .panel center { min-width: 560px; }
+               =20
+                .body .columns td.one,
+                .body .column td.one { width: 8.333333%; }
+                .body .columns td.two,
+                .body .column td.two { width: 16.666666%; }
+                .body .columns td.three,
+                .body .column td.three { width: 25%; }
+                .body .columns td.four,
+                .body .column td.four { width: 33.333333%; }
+                .body .columns td.five,
+                .body .column td.five { width: 41.666666%; }
+                .body .columns td.six,
+                .body .column td.six { width: 50%; }
+                .body .columns td.seven,
+                .body .column td.seven { width: 58.333333%; }
+                .body .columns td.eight,
+                .body .column td.eight { width: 66.666666%; }
+                .body .columns td.nine,
+                .body .column td.nine { width: 75%; }
+                .body .columns td.ten,
+                .body .column td.ten { width: 83.333333%; }
+                .body .columns td.eleven,
+                .body .column td.eleven { width: 91.666666%; }
+                .body .columns td.twelve,
+                .body .column td.twelve { width: 100%; }
+               =20
+                td.offset-by-one { padding-left: 50px; }
+                td.offset-by-two { padding-left: 100px; }
+                td.offset-by-three { padding-left: 150px; }
+                td.offset-by-four { padding-left: 200px; }
+                td.offset-by-five { padding-left: 250px; }
+                td.offset-by-six { padding-left: 300px; }
+                td.offset-by-seven { padding-left: 350px; }
+                td.offset-by-eight { padding-left: 400px; }
+                td.offset-by-nine { padding-left: 450px; }
+                td.offset-by-ten { padding-left: 500px; }
+                td.offset-by-eleven { padding-left: 550px; }
+               =20
+                td.expander {
+                  visibility: hidden;
+                  width: 0px;
+                  padding: 0 !important;
+                }
+               =20
+                table.columns .text-pad,
+                table.column .text-pad {
+                  padding-left: 10px;
+                  padding-right: 10px;
+                }
+               =20
+                table.columns .left-text-pad,
+                table.columns .text-pad-left,
+                table.column .left-text-pad,
+                table.column .text-pad-left {
+                  padding-left: 10px;
+                }
+               =20
+                table.columns .right-text-pad,
+                table.columns .text-pad-right,
+                table.column .right-text-pad,
+                table.column .text-pad-right {
+                  padding-right: 10px;
+                }
+               =20
+                /* Block Grid */
+               =20
+                .block-grid {
+                  width: 100%;
+                  max-width: 580px;
+                }
+               =20
+                .block-grid td {
+                  display: inline-block;
+                  padding:10px;
+                }
+               =20
+                .two-up td {
+                  width:270px;
+                }
+               =20
+                .three-up td {
+                  width:173px;
+                }
+               =20
+                .four-up td {
+                  width:125px;
+                }
+               =20
+                .five-up td {
+                  width:96px;
+                }
+               =20
+                .six-up td {
+                  width:76px;
+                }
+               =20
+                .seven-up td {
+                  width:62px;
+                }
+               =20
+                .eight-up td {
+                  width:52px;
+                }
+               =20
+                /* Alignment & Visibility Classes */
+               =20
+                table.center, td.center {
+                  text-align: center;
+                }
+               =20
+                h1.center,
+                h2.center,
+                h3.center,
+                h4.center,
+                h5.center,
+                h6.center {
+                  text-align: center;
+                }
+               =20
+                span.center {
+                  display: block;
+                  width: 100%;
+                  text-align: center;
+                }
+               =20
+                img.center {
+                  margin: 0 auto;
+                  float: none;
+                }
+               =20
+                .show-for-small,
+                .hide-for-desktop {
+                  display: none;
+                }
+               =20
+                /* Typography */
+               =20
+                body, table.body, h1, h2, h3, h4, h5, h6, p, td {=20
+                  color: #222222;
+                  font-family: "Helvetica", "Arial", sans-serif;=20
+                  font-weight: normal;=20
+                  padding:0;=20
+                  margin: 0;
+                  text-align: left;=20
+                  line-height: 1.3;
+                }
+               =20
+                h1, h2, h3, h4, h5, h6 {
+                  word-break: normal;
+                }
+               =20
+                h1 {font-size: 40px;}
+                h2 {font-size: 36px;}
+                h3 {font-size: 32px;}
+                h4 {font-size: 28px;}
+                h5 {font-size: 24px;}
+                h6 {font-size: 20px;}
+                body, table.body, p, td {font-size: 14px;line-height:19px;}
+               =20
+                p.lead, p.lede, p.leed {
+                  font-size: 18px;
+                  line-height:21px;
+                }
+               =20
+                p {=20
+                  margin-bottom: 10px;
+                }
+               =20
+                small {
+                  font-size: 10px;
+                }
+               =20
+                a {
+                  color: #2ba6cb;=20
+                  text-decoration: none;
+                }
+               =20
+                a:hover {=20
+                  color: #2795b6 !important;
+                }
+               =20
+                a:active {=20
+                  color: #2795b6 !important;
+                }
+               =20
+                a:visited {=20
+                  color: #2ba6cb !important;
+                }
+               =20
+                h1 a,=20
+                h2 a,=20
+                h3 a,=20
+                h4 a,=20
+                h5 a,=20
+                h6 a {
+                  color: #2ba6cb;
+                }
+               =20
+                h1 a:active,=20
+                h2 a:active, =20
+                h3 a:active,=20
+                h4 a:active,=20
+                h5 a:active,=20
+                h6 a:active {=20
+                  color: #2ba6cb !important;=20
+                }=20
+               =20
+                h1 a:visited,=20
+                h2 a:visited, =20
+                h3 a:visited,=20
+                h4 a:visited,=20
+                h5 a:visited,=20
+                h6 a:visited {=20
+                  color: #2ba6cb !important;=20
+                }=20
+               =20
+                /* Panels */
+               =20
+                .panel {
+                  background: #f2f2f2;
+                  border: 1px solid #d9d9d9;
+                  padding: 10px !important;
+                }
+               =20
+                .sub-grid table {
+                  width: 100%;
+                }
+               =20
+                .sub-grid td.sub-columns {
+                  padding-bottom: 0;
+                }
+               =20
+                /* Buttons */
+               =20
+                table.button,
+                table.tiny-button,
+                table.small-button,
+                table.medium-button,
+                table.large-button {
+                  width: 100%;
+                  overflow: hidden;
+                }
+               =20
+                table.button td,
+                table.tiny-button td,
+                table.small-button td,
+                table.medium-button td,
+                table.large-button td {
+                  display: block;
+                  width: auto !important;
+                  text-align: center;
+                  background: #2ba6cb;
+                  border: 1px solid #2284a1;
+                  color: #ffffff;
+                  padding: 8px 0;
+                }
+               =20
+                table.tiny-button td {
+                  padding: 5px 0 4px;
+                }
+               =20
+                table.small-button td {
+                  padding: 8px 0 7px;
+                }
+               =20
+                table.medium-button td {
+                  padding: 12px 0 10px;
+                }
+               =20
+                table.large-button td {
+                  padding: 21px 0 18px;
+                }
+               =20
+                table.button td a,
+                table.tiny-button td a,
+                table.small-button td a,
+                table.medium-button td a,
+                table.large-button td a {
+                  font-weight: bold;
+                  text-decoration: none;
+                  font-family: Helvetica, Arial, sans-serif;
+                  color: #ffffff;
+                  font-size: 16px;
+                }
+               =20
+                table.tiny-button td a {
+                  font-size: 12px;
+                  font-weight: normal;
+                }
+               =20
+                table.small-button td a {
+                  font-size: 16px;
+                }
+               =20
+                table.medium-button td a {
+                  font-size: 20px;
+                }
+               =20
+                table.large-button td a {
+                  font-size: 24px;
+                }
+               =20
+                table.button:hover td,
+                table.button:visited td,
+                table.button:active td {
+                  background: #2795b6 !important;
+                }
+               =20
+                table.button:hover td a,
+                table.button:visited td a,
+                table.button:active td a {
+                  color: #fff !important;
+                }
+               =20
+                table.button:hover td,
+                table.tiny-button:hover td,
+                table.small-button:hover td,
+                table.medium-button:hover td,
+                table.large-button:hover td {
+                  background: #2795b6 !important;
+                }
+               =20
+                table.button:hover td a,
+                table.button:active td a,
+                table.button td a:visited,
+                table.tiny-button:hover td a,
+                table.tiny-button:active td a,
+                table.tiny-button td a:visited,
+                table.small-button:hover td a,
+                table.small-button:active td a,
+                table.small-button td a:visited,
+                table.medium-button:hover td a,
+                table.medium-button:active td a,
+                table.medium-button td a:visited,
+                table.large-button:hover td a,
+                table.large-button:active td a,
+                table.large-button td a:visited {
+                  color: #ffffff !important;=20
+                }
+               =20
+                table.secondary td {
+                  background: #e9e9e9;
+                  border-color: #d0d0d0;
+                  color: #555;
+                }
+               =20
+                table.secondary td a {
+                  color: #555;
+                }
+               =20
+                table.secondary:hover td {
+                  background: #d0d0d0 !important;
+                  color: #555;
+                }
+               =20
+                table.secondary:hover td a,
+                table.secondary td a:visited,
+                table.secondary:active td a {
+                  color: #555 !important;
+                }
+               =20
+                table.success td {
+                  background: #5da423;
+                  border-color: #457a1a;
+                }
+               =20
+                table.success:hover td {
+                  background: #457a1a !important;
+                }
+               =20
+                table.alert td {
+                  background: #c60f13;
+                  border-color: #970b0e;
+                }
+               =20
+                table.alert:hover td {
+                  background: #970b0e !important;
+                }
+               =20
+                table.radius td {
+                  -webkit-border-radius: 3px;
+                  -moz-border-radius: 3px;
+                  border-radius: 3px;
+                }
+               =20
+                table.round td {
+                  -webkit-border-radius: 500px;
+                  -moz-border-radius: 500px;
+                  border-radius: 500px;
+                }
+               =20
+                /* Outlook First */
+               =20
+                body.outlook p {
+                  display: inline !important;
+                }
+               =20
+                /*  Media Queries */
+               =20
+                @media only screen and (max-width: 600px) {
+               =20
+                  table[class=3D"body"] img {
+                    width: auto !important;
+                    height: auto !important;
+                  }
+               =20
+                  table[class=3D"body"] center {
+                    min-width: 0 !important;
+                  }
+               =20
+                  table[class=3D"body"] .container {
+                    width: 95% !important;
+                  }
+               =20
+                  table[class=3D"body"] .row {
+                    width: 100% !important;
+                    display: block !important;
+                  }
+               =20
+                  table[class=3D"body"] .wrapper {
+                    display: block !important;
+                    padding-right: 0 !important;
+                  }
+               =20
+                  table[class=3D"body"] .columns,
+                  table[class=3D"body"] .column {
+                    table-layout: fixed !important;
+                    float: none !important;
+                    width: 100% !important;
+                    padding-right: 0px !important;
+                    padding-left: 0px !important;
+                    display: block !important;
+                  }
+               =20
+                  table[class=3D"body"] .wrapper.first .columns,
+                  table[class=3D"body"] .wrapper.first .column {
+                    display: table !important;
+                  }
+               =20
+                  table[class=3D"body"] table.columns td,
+                  table[class=3D"body"] table.column td {
+                    width: 100% !important;
+                  }
+               =20
+                  table[class=3D"body"] .columns td.one,
+                  table[class=3D"body"] .column td.one { width: 8.333333% !=
+important; }
+                  table[class=3D"body"] .columns td.two,
+                  table[class=3D"body"] .column td.two { width: 16.666666% =
+!important; }
+                  table[class=3D"body"] .columns td.three,
+                  table[class=3D"body"] .column td.three { width: 25% !impo=
+rtant; }
+                  table[class=3D"body"] .columns td.four,
+                  table[class=3D"body"] .column td.four { width: 33.333333%=
+ !important; }
+                  table[class=3D"body"] .columns td.five,
+                  table[class=3D"body"] .column td.five { width: 41.666666%=
+ !important; }
+                  table[class=3D"body"] .columns td.six,
+                  table[class=3D"body"] .column td.six { width: 50% !import=
+ant; }
+                  table[class=3D"body"] .columns td.seven,
+                  table[class=3D"body"] .column td.seven { width: 58.333333=
+% !important; }
+                  table[class=3D"body"] .columns td.eight,
+                  table[class=3D"body"] .column td.eight { width: 66.666666=
+% !important; }
+                  table[class=3D"body"] .columns td.nine,
+                  table[class=3D"body"] .column td.nine { width: 75% !impor=
+tant; }
+                  table[class=3D"body"] .columns td.ten,
+                  table[class=3D"body"] .column td.ten { width: 83.333333% =
+!important; }
+                  table[class=3D"body"] .columns td.eleven,
+                  table[class=3D"body"] .column td.eleven { width: 91.66666=
+6% !important; }
+                  table[class=3D"body"] .columns td.twelve,
+                  table[class=3D"body"] .column td.twelve { width: 100% !im=
+portant; }
+               =20
+                  table[class=3D"body"] td.offset-by-one,
+                  table[class=3D"body"] td.offset-by-two,
+                  table[class=3D"body"] td.offset-by-three,
+                  table[class=3D"body"] td.offset-by-four,
+                  table[class=3D"body"] td.offset-by-five,
+                  table[class=3D"body"] td.offset-by-six,
+                  table[class=3D"body"] td.offset-by-seven,
+                  table[class=3D"body"] td.offset-by-eight,
+                  table[class=3D"body"] td.offset-by-nine,
+                  table[class=3D"body"] td.offset-by-ten,
+                  table[class=3D"body"] td.offset-by-eleven {
+                    padding-left: 0 !important;
+                  }
+               =20
+                  table[class=3D"body"] table.columns td.expander {
+                    width: 1px !important;
+                  }
+               =20
+                  table[class=3D"body"] .right-text-pad,
+                  table[class=3D"body"] .text-pad-right {
+                    padding-left: 10px !important;
+                  }
+               =20
+                  table[class=3D"body"] .left-text-pad,
+                  table[class=3D"body"] .text-pad-left {
+                    padding-right: 10px !important;
+                  }
+               =20
+                  table[class=3D"body"] .hide-for-small,
+                  table[class=3D"body"] .show-for-desktop {
+                    display: none !important;
+                  }
+               =20
+                  table[class=3D"body"] .show-for-small,
+                  table[class=3D"body"] .hide-for-desktop {
+                    display: inherit !important;
+                  }
+                }
+            </style>
+            <style type=3D"text/css">=20
+                body {
+                    background: #d9e0e7;
+                }
+                a:hover,
+                a:focus {
+                    text-decoration: underline;
+                }
+               =20
+                /* Typography */
+               =20
+                body, table.body, p, td {
+                    font-size: 12px;
+                }
+                h1, h2, h3, h4 {
+                    margin: 5px 0 10px;
+                }
+                h5, h6 {
+                    margin: 5px 0;
+                }
+               =20
+                h1 { font-size: 36px; }
+                h2 { font-size: 30px; }
+                h3 { font-size: 24px; }
+                h4 { font-size: 18px; }
+                h5 { font-size: 14px; }
+                h6 { font-size: 12px; }
+               =20
+                /* Predefined Class */
+               =20
+                h1.last,
+                h2.last,
+                h3.last,
+                h4.last,
+                h5.last,
+                h6.last,
+                p.last {
+                    margin-bottom: 0;
+                }
+                td.last {
+                    padding-bottom: 0 !important;
+                }
+                td.wrapper {
+                    padding: 15px 15px 0 15px;
+                }
+                table.columns td, table.column td {
+                    padding: 0 0 15px 0;
+                }
+                .header,
+                .footer {
+                    background: #ffffff;
+                }
+                .content.dark-theme {
+                    background: #2d353c;
+                }
+                .content.dark-theme .panel {
+                    background: #1b2024;
+                    border: none;
+                }
+                .content.dark-theme h1,=20
+                .content.dark-theme h2,
+                .content.dark-theme h3,=20
+                .content.dark-theme h4,=20
+                .content.dark-theme h5,=20
+                .content.dark-theme h6,
+                .content.dark-theme .highlight {
+                    color: #fff !important;
+                }=20
+                .content.dark-theme a, a {
+                    color: #00acac;
+                }
+                .content.dark-theme p,=20
+                .content.dark-theme td {
+                    color: #a8acb1 !important;
+                }
+                .divider {
+                    height: 1px;
+                    width: 100%;
+                    background: #000;
+                    margin-top: 5px;
+                }
+                .text-right {
+                    text-align: right;
+                }
+                .valign-middle {
+                    vertical-align: middle;
+                }
+                .m-t-0 { margin-top: 0px !important; }
+                .m-t-5 { margin-top: 5px !important; }
+                .m-t-10 { margin-top: 10px !important; }
+                .m-t-15 { margin-top: 15px !important; }
+                .m-b-0 { margin-bottom: 0px !important; }
+                .m-b-5 { margin-bottom: 5px !important; }
+                .m-b-10 { margin-bottom: 10px !important; }
+                .m-b-15 { margin-bottom: 15px !important; }
+                .p-t-0 { padding-top: 0px !important; }
+                .p-t-5 { padding-top: 5px !important; }
+                .p-t-10 { padding-top: 10px !important; }
+                .p-t-15 { padding-top: 15px !important; }
+               =20
+                /* Button */
+                .btn a,
+                .button a {
+                    color: #fff !important;
+                    font-weight: normal !important;
+                    text-decoration: none !important;
+                }
+                table.btn td,
+                table.button td {
+                    vertical-align: middle !important;
+                    padding: 6px 18px !important;
+                    background: #00acac !important;
+                    border-color: #00acac !important;
+                }
+                table.btn:hover td,=20
+                table.button:hover td,
+                table.btn:visited td,=20
+                table.button:visited td,
+                table.btn:active td,
+                table.button:active td {
+                    background: #008a8a !important;
+                    border-color: #008a8a !important;
+                }
+               =20
+                /* Button Orange */
+               =20
+                table.btn.orange td,
+                table.button.orange td {
+                    background: #f59c1a !important;
+                    border-color: #f59c1a !important;
+                }
+                table.btn.orange:hover td,=20
+                table.button.orange:hover td,
+                table.btn.orange:visited td,=20
+                table.button.orange:visited td,
+                table.btn.orange:active td,
+                table.button.orange:active td {
+                    background: #c47d15 !important;
+                    border-color: #c47d15 !important;
+                }
+               =20
+                /* Button Blue */
+               =20
+                table.btn.blue td,
+                table.button.blue td {
+                    background: #348fe2 !important;
+                    border-color: #348fe2 !important;
+                }
+                table.btn.blue:hover td,=20
+                table.button.blue:hover td,
+                table.btn.blue:visited td,=20
+                table.button.blue:visited td,
+                table.btn.blue:active td,
+                table.button.blue:active td {
+                    background: #2a72b5 !important;
+                    border-color: #2a72b5 !important;
+                }
+               =20
+                /* Button Red */
+               =20
+                table.btn.red td,
+                table.button.red td {
+                    background: #ff5b57 !important;
+                    border-color: #ff5b57 !important;
+                }
+                table.btn.red:hover td,=20
+                table.button.red:hover td,
+                table.btn.red:visited td,=20
+                table.button.red:visited td,
+                table.btn.red:active td,
+                table.button.red:active td {
+                    background: #cc4946 !important;
+                    border-color: #cc4946 !important;
+                }
+               =20
+                /* Button White */
+               =20
+                table.btn.white td a,
+                table.button.white td a {
+                    color: #333 !important;
+                }
+                table.btn.white td,
+                table.button.white td {
+                    background: #ffffff !important;
+                    border-color: #ffffff !important;
+                }
+                table.btn.white:hover td,=20
+                table.button.white:hover td,
+                table.btn.white:visited td,=20
+                table.button.white:visited td,
+                table.btn.white:active td,
+                table.button.white:active td {
+                    background: #e2e7eb !important;
+                    border-color: #e2e7eb !important;
+                }
+               =20
+                /* Button Grey */
+               =20
+                table.btn.grey td,
+                table.button.grey td {
+                    background: #348fe2 !important;
+                    border-color: #348fe2 !important;
+                }
+                table.btn.grey:hover td,=20
+                table.button.grey:hover td,
+                table.btn.grey:visited td,=20
+                table.button.grey:visited td,
+                table.btn.grey:active td,
+                table.button.grey:active td {
+                    background: #929ba1 !important;
+                    border-color: #929ba1 !important;
+                }
+               =20
+                @media only screen and (max-width: 600px) {
+                    .body .container.content {
+                        width: 100% !important;
+                    }
+                    table[class=3D"body"] .wrapper {
+                        padding-right: 15px !important;
+                    }
+                    .text-right {
+                        text-align: left !important;
+                    }
+                }
+            </style>
+            </head>
+        <body><table class=3D"body">
+                <tr>
+                    <td class=3D"center" align=3D"center" valign=3D"top">
+                        <center>
+                            <!-- begin page container -->
+                            <table class=3D"container content dark-theme">
+                                <tr>
+                                    <td>
+                                        <!-- begin row -->
+                                        <table class=3D"row">
+                                            <tr>
+                                                <!-- begin wrapper -->
+                                                <td class=3D"wrapper">
+                                                    <table class=3D"twelve =
+columns">
+                                                        <tr>
+                                                            <td class=3D"la=
+st">
+                                                                <h4>Dear Mu=
+hammad Masruhin.</h4>
+                                                                <p class=3D=
+"m-b-5">Please click the following URL to activate your account:</p>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class=3D"pa=
+nel">
+                                                                <a href=3D"=
+http://localhost/pf_jobmonster/frontend/web/site/confirm?id=3D34&key=3DNFfV=
+t0jeFZ0pSLv5Dd1LvXOImIswO_GK">http://localhost/pf_jobmonster/frontend/web/s=
+ite/confirm?id=3D34&key=3DNFfVt0jeFZ0pSLv5Dd1LvXOImIswO_GK</a>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p class=3D=
+"m-t-15 last">If clicking the URL above does not work, copy and paste the U=
+RL into a browser window.</p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <!-- end wrapper -->
+                                            </tr>
+                                        </table>
+                                        <!-- end row -->
+                                        <!-- begin divider -->
+                                        <table class=3D"divider"></table>
+                                        <!-- end divider -->
+                                        <!-- begin row -->
+                                        <table class=3D"row">
+                                            <tr>
+                                                <!-- begin wrapper -->
+                                                <td class=3D"wrapper">
+                                                    <!-- begin twelve colum=
+ns -->
+                                                    <table class=3D"twelve =
+columns">
+                                                        <tr>
+                                                            <td>
+                                                                <h4>Informa=
+tion</h4>
+                                                                <p>
+                                                                    Our Sys=
+tem Will Send You If there are any Resume or Job Vacancy New.
+                                                                </p>
+                                                                <p>
+                                                                    <a href=
+=3D"index.html"><img src=3D"assets/img/product/product-preview.jpg" /></a>
+                                                                </p>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                    <!-- end twelve columns=
+ -->
+                                                    <p>
+                                                        <i>This ia a system=
+ generated email and reply is not required.</i>
+                                                    </p>
+                                                </td>
+                                                <!-- end wrapper -->
+                                            </tr>
+                                        </table>
+                                        <!-- end row -->
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- end page container -->
+                        </center>
+                    </td>
+                </tr>
+            </table></body>
