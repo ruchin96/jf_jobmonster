@@ -1,0 +1,11 @@
+{
+    "name": "yii/portofolio",
+    "description": "ok",
+    "authors": [
+        {
+            "name": "Muhammad Masruhin",
+            "email": "mmasruhin@hotmail.com"
+        }
+    ],
+    "require": {}
+}
