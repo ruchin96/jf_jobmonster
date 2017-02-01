@@ -15,7 +15,7 @@ use Yii;
  * @property integer $res_id_yearexp
  * @property integer $res_id_jobcategory
  * @property integer $res_id_joblevel
- * @property string $res_joblocation
+ * @property integer $res_joblocation
  * @property string $res_attachment
  * @property string $res_selfdesc
  * @property string $res_statuspost
@@ -30,6 +30,7 @@ use Yii;
  * @property CJobcategory $resIdJobcategory
  * @property CExplevel $resIdJoblevel
  * @property MLanguage $resIdLanguage
+ * @property MLocation $resJoblocation
  * @property SSkillsummary[] $sSkillsummaries
  * @property SWorkexperience[] $sWorkexperiences
  */
@@ -50,16 +51,17 @@ class SResume extends \yii\db\ActiveRecord
     {
         return [
             [['res_id_seek', 'res_title', 'res_id_language', 'res_id_hidegree', 'res_id_yearexp', 'res_id_jobcategory', 'res_id_joblevel', 'res_joblocation', 'res_selfdesc', 'res_statuspost', 'res_createdat'], 'required'],
-            [['res_id_seek', 'res_id_language', 'res_id_hidegree', 'res_id_yearexp', 'res_id_jobcategory', 'res_id_joblevel'], 'integer'],
+            [['res_id_seek', 'res_id_language', 'res_id_hidegree', 'res_id_yearexp', 'res_id_jobcategory', 'res_id_joblevel', 'res_joblocation'], 'integer'],
             [['res_selfdesc', 'res_statuspost'], 'string'],
             [['res_createdat', 'res_updatedat'], 'safe'],
-            [['res_title', 'res_joblocation', 'res_attachment'], 'string', 'max' => 255],
+            [['res_title', 'res_attachment'], 'string', 'max' => 255],
             [['res_id_seek'], 'exist', 'skipOnError' => true, 'targetClass' => SSeeker::className(), 'targetAttribute' => ['res_id_seek' => 'seek_id']],
             [['res_id_hidegree'], 'exist', 'skipOnError' => true, 'targetClass' => SHighesdegree::className(), 'targetAttribute' => ['res_id_hidegree' => 'hdegree_id']],
             [['res_id_yearexp'], 'exist', 'skipOnError' => true, 'targetClass' => CYearexperience::className(), 'targetAttribute' => ['res_id_yearexp' => 'yearexp_id']],
             [['res_id_jobcategory'], 'exist', 'skipOnError' => true, 'targetClass' => CJobcategory::className(), 'targetAttribute' => ['res_id_jobcategory' => 'jobcategory_id']],
             [['res_id_joblevel'], 'exist', 'skipOnError' => true, 'targetClass' => CExplevel::className(), 'targetAttribute' => ['res_id_joblevel' => 'explevel_id']],
             [['res_id_language'], 'exist', 'skipOnError' => true, 'targetClass' => MLanguage::className(), 'targetAttribute' => ['res_id_language' => 'language_id']],
+            [['res_joblocation'], 'exist', 'skipOnError' => true, 'targetClass' => MLocation::className(), 'targetAttribute' => ['res_joblocation' => 'location_id']],
         ];
     }
 
@@ -148,6 +150,14 @@ class SResume extends \yii\db\ActiveRecord
     public function getResIdLanguage()
     {
         return $this->hasOne(MLanguage::className(), ['language_id' => 'res_id_language']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getResJoblocation()
+    {
+        return $this->hasOne(MLocation::className(), ['location_id' => 'res_joblocation']);
     }
 
     /**

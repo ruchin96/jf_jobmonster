@@ -88,10 +88,10 @@ $this->title = "Job Monster - Companies"
 					<div class="noo-sidebar-wrap">
 						<div class="widget noo-job-search-widget">
 							<h3 class="widget-title">Search</h3>
-							<form class="form-horizontal noo-job-search">
+							<form class="form-horizontal noo-job-search" method="get">
 								<label class="sr-only" for="s">Search for:</label>
-								<input type="search" id="s" class="form-control" placeholder="Search Company&hellip;" value="" name="s" title="Search for:"/>
-								<input type="submit" class="hidden"/>
+								<input type="search" id="s" class="form-control" placeholder="Search Company&hellip;" value="" name="company_name" title="Search for:"/>
+								<button type="submit">Search</button>
 							</form>
 						</div>
 						<div class="widget noo-job-count-widget">

@@ -28,7 +28,7 @@ $con = Yii::$app->controller->id;
                     <span>Dashboard</span>
                 </a>
             </li>
-            <li class="has-sub <?=$con=='m-language'? 'active' : '' ?>">
+            <li class="has-sub <?=$con=='m-language' || $con=='m-location'? 'active' : '' ?>">
                 <a href="javascript:;">
                     <span class="caret pull-right"></span>
                     <i class="fa fa-inbox"></i> 
@@ -36,6 +36,7 @@ $con = Yii::$app->controller->id;
                 </a>
                 <ul class="sub-menu">
                     <li class="<?=$con=='m-language'? 'active' : '' ?>"><a href="<?=Url::to(['m-language/index'])?>">Language</a></li>
+                    <li class="<?=$con=='m-location'? 'active' : '' ?>"><a href="<?=Url::to(['m-location/index'])?>">Location</a></li>
                 </ul>
             </li>
             <li class="has-sub <?=($con=='c-company' || $con=='c-jobfinder' || $con=='c-companytype' || $con=='c-jobcategory' || $con=='c-salaryoffer' || $con=='c-acdegree' || $con=='c-yearexperience' || $con=='c-explevel' || $con=='c-dresscode' || $con=='c-timecategory') ? 'active' : '' ?>">

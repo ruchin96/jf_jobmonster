@@ -56,7 +56,7 @@
 										<a href="#"><strong><?=$resume['res_title']?></strong></a>
 									</td>
 									<td class="hidden-xs">
-										<i class="fa fa-map-marker"></i>&nbsp;<em><?=$resume['res_joblocation']?></em>
+										<i class="fa fa-map-marker"></i>&nbsp;<em><?=$resume['resJoblocation']['location_name']?></em>
 									</td>
 									<td class="hidden-xs"><strong><?=$resume['resIdJobcategory']['jobcategory_name']?></strong></td>
 								</tr>
@@ -83,15 +83,15 @@
 				<div class="noo-sidebar-wrap">
 					<div class="widget widget_noo_advanced_search_widget">
 						<h4 class="widget-title">Search</h4>
-						<form class="widget-advanced-search">
+						<form class="widget-advanced-search" method="get">
 							<div class="form-group">
 								<label class="sr-only" for="search-keyword">keyword</label>
-								<input type="text" class="form-control" id="search-keyword" name="s" placeholder="keyword" value=""/>
+								<input type="text" class="form-control" id="search-keyword" name="res_title" placeholder="keyword" value=""/>
 							</div>
 							<div class="form-group">
 								<label class="h5" for="search-category">Category</label>
 								<div class="advance-search-form-control">
-									<select name="category" class="form-control-chosen form-control" id="search-category">
+									<select name="res_category" class="form-control-chosen form-control" id="search-category">
 										<option class="text-placeholder" value="">all category</option>
 										<?php foreach ($all_jobcategory as $resumecategory) {?>
 										<option value=""><?=$resumecategory['jobcategory_name']?></option>
@@ -102,7 +102,7 @@
 							<div class="form-group">
 								<label class="h5">Total Year Experience</label>
 								<div class="advance-search-form-control">
-									<select name="experience_year" class="form-control-chosen form-control">
+									<select name="res_id_yearexp" class="form-control-chosen form-control">
 										<option class="text-placeholder" value="">All Total Year Experience </option>
 										<?php foreach ($all_yexp as $yexp_list) {?>
 										<option value=""><?=$yexp_list['yearexp_value']?> </option>
@@ -113,7 +113,7 @@
 							<div class="form-group">
 								<label class="h5">Highest Degree Level</label>
 								<div class="advance-search-form-control">
-									<select name="highest_degree" class="form-control-chosen form-control">
+									<select name="res_id_hidegree" class="form-control-chosen form-control">
 										<option class="text-placeholder" value="">All Highest Degree Level </option>
 										<?php foreach ($all_hdegree as $hdegree_list) {?>
 										<option value=""><?=$hdegree_list['hdegree_name']?> </option>
@@ -124,14 +124,15 @@
 							<div class="form-group">
 								<label class="h5">Location</label>
 								<div class="advance-search-form-control">
-									<select name="location" class="form-control-chosen form-control">
+									<select name="res_joblocation" class="form-control-chosen form-control">
 										<option class="text-placeholder" value="">all location</option>
-										<option value="">Amsterdam</option>
-										<option value="">Kuta, Indonesia</option>
+										<<?php foreach ($joblocation as $loc) {
+                                            echo '<option value="'.$loc['location_id'].'">'.$loc['location_name'].'</option>';
+                                        }?>
 									</select>
 								</div>
 							</div>
-							<button type="button" class="btn btn-primary btn-search-submit">Search</button>
+							<button type="submit" class="btn btn-primary btn-search-submit">Search</button>
 						</form>
 					</div>
 					<div class="widget noo-resume-count-widget">

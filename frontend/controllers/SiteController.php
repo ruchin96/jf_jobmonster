@@ -108,7 +108,7 @@ class SiteController extends Controller
 
         if (count($post)>0){
             // var_dump($post);
-            $query = CJobfinder::find();
+            $query = CJobfinder::find()->where(['jobfinder_statuspost'=>'r']);
 
             if ($post['jobfinder_jobname'] != null) {
                 $query->andWhere(['LIKE','jobfinder_jobname', $post['jobfinder_jobname']]);
@@ -119,9 +119,9 @@ class SiteController extends Controller
             if ($post['jobfinder_location'] != null) {
                 $query->andWhere(['LIKE','jobfinder_location', $post['jobfinder_location']]);
             }
-            $resultSearch = $query->asArray()->all();
+            $resultSearch = $query->joinWith(['jobfinderTimecategory','jobfinderIdCompany','jobfinderLocation'])->asArray()->all();
 
-            return $this->render('list_job_search',[
+            return $this->render('list_search',[
                     'resultSearch' => $resultSearch,
                 ]);
         }else{
@@ -139,22 +139,37 @@ class SiteController extends Controller
     //company
     public function actionCompanylist()
     {
-        $itemPerPage = 7;
-        $itemCount = count(CCompany::find()->all());
+        $get = Yii::$app->request->get();
+        if (!empty($_GET['company_name'])){
+            // var_dump($post);
+            $query = CCompany::find();
 
-        if (isset($_GET['page']) AND !empty($_GET['page'])) {
-            $_GET['page'] = intval($_GET['page']);
-            $pageCounter = $_GET['page'];
+            if ($get['company_name'] != null) {
+                $query->andWhere(['LIKE','company_name', $get['company_name']]);
+            }
+            $resultSearch = $query->asArray()->all();
+
+            return $this->render('list_search',[
+                    'resultSearch' => $resultSearch,
+                ]);
         }else{
-            $pageCounter = 1;
+            $itemPerPage = 7;
+            $itemCount = count(CCompany::find()->all());
+
+            if (isset($_GET['page']) AND !empty($_GET['page'])) {
+                $_GET['page'] = intval($_GET['page']);
+                $pageCounter = $_GET['page'];
+            }else{
+                $pageCounter = 1;
+            }
+            $offsetPart = ($pageCounter - 1) * $itemPerPage;
+
+            $data['pageCounter'] = $pageCounter;
+            $data['pageTotal'] = ceil($itemCount/$itemPerPage);
+
+            $data['all_company'] = CCompany::find()->asArray()->all();
+            return $this->render('list_company',$data);
         }
-        $offsetPart = ($pageCounter - 1) * $itemPerPage;
-
-        $data['pageCounter'] = $pageCounter;
-        $data['pageTotal'] = ceil($itemCount/$itemPerPage);
-
-        $data['all_company'] = CCompany::find()->asArray()->all();
-        return $this->render('list_company',$data);
     }
 
     public function actionCompanyDetail($id)
@@ -194,31 +209,70 @@ class SiteController extends Controller
     //jobs
     public function actionJoblist()
     {
-        $itemPerPage = 7;
-        $itemCount = count(CJobfinder::find()->where(['jobfinder_statuspost'=>'r'])->all());
+        $get = Yii::$app->request->get();
 
-        if (isset($_GET['page']) AND !empty($_GET['page'])) {
-            $_GET['page'] = intval($_GET['page']);
-            $pageCounter = $_GET['page'];
+        if (!empty($_GET['jobfinder_jobname']) || !empty($_GET['jobfinder_category']) || !empty($_GET['jobfinder_timecategory']) || !empty($_GET['jobfinder_salaryoffer']) || !empty($_GET['jobfinder_explvl']) || !empty($_GET['jobfinder_acdegree']) || !empty($_GET['jobfinder_dresscode'])){
+            // var_dump($post);
+            $query = CJobfinder::find()->where(['jobfinder_statuspost'=>'r']);
+
+            if ($get['jobfinder_jobname'] != null) {
+                $query->andWhere(['LIKE','jobfinder_jobname', $get['jobfinder_jobname']]);
+            }
+            if ($get['jobfinder_category'] != null) {
+                $query->andWhere(['LIKE','jobfinder_category', $get['jobfinder_category']]);
+            }
+            if ($get['jobfinder_timecategory'] != null) {
+                $query->andWhere(['LIKE','jobfinder_timecategory', $get['jobfinder_timecategory']]);
+            }
+            if ($get['jobfinder_salaryoffer'] != null) {
+                $query->andWhere(['LIKE','jobfinder_salaryoffer', $get['jobfinder_salaryoffer']]);
+            }
+            if ($get['jobfinder_explvl'] != null) {
+                $query->andWhere(['LIKE','jobfinder_explvl', $get['jobfinder_explvl']]);
+            }
+            if ($get['jobfinder_acdegree'] != null) {
+                $query->andWhere(['LIKE','jobfinder_acdegree', $get['jobfinder_acdegree']]);
+            }
+            if ($get['jobfinder_dresscode'] != null) {
+                $query->andWhere(['LIKE','jobfinder_dresscode', $get['jobfinder_dresscode']]);
+            }
+            $resultSearch = $query->joinWith(['jobfinderTimecategory','jobfinderIdCompany','jobfinderLocation'])->asArray()->all();
+
+            return $this->render('list_search',[
+                    'resultSearch' => $resultSearch,
+                ]);
         }else{
-            $pageCounter = 1;
+
+            $itemPerPage = 7;
+            $itemCount = count(CJobfinder::find()->where(['jobfinder_statuspost'=>'r'])->all());
+
+            if (isset($_GET['page']) AND !empty($_GET['page'])) {
+                $_GET['page'] = intval($_GET['page']);
+                $pageCounter = $_GET['page'];
+            }else{
+                $pageCounter = 1;
+            }
+            $offsetPart = ($pageCounter - 1) * $itemPerPage;
+
+            $pageTotal = ceil($itemCount/$itemPerPage);
+
+            $all_job = CJobfinder::find()
+            ->joinWith([
+                'jobfinderTimecategory',
+                'jobfinderIdCompany',
+                'jobfinderLocation',
+            ])
+            ->limit($itemPerPage)
+            ->offset($offsetPart)
+            ->where(['jobfinder_statuspost'=>'r'])
+            ->asArray()->all();
+
+            return $this->render('list_job', [
+                    'all_job' => $all_job,
+                    'pageCounter' => $pageCounter,
+                    'pageTotal' => $pageTotal,
+                ]);
         }
-        $offsetPart = ($pageCounter - 1) * $itemPerPage;
-
-        $data['pageCounter'] = $pageCounter;
-        $data['pageTotal'] = ceil($itemCount/$itemPerPage);
-
-        $data['all_job'] = CJobfinder::find()
-        ->joinWith([
-            'jobfinderTimecategory',
-            'jobfinderIdCompany',
-            'jobfinderLocation',
-        ])
-        ->limit($itemPerPage)
-        ->offset($offsetPart)
-        ->where(['jobfinder_statuspost'=>'r'])
-        ->asArray()->all();
-        return $this->render('list_job', $data);
     }
 
     public function actionJobsDetail($id)
@@ -265,26 +319,56 @@ class SiteController extends Controller
     //resume
     public function actionResumelist()
     {
-        $itemPerPage = 8;
-        $itemCount = count(SResume::find()->where(['res_statuspost'=>'r'])->all());
+        $get = Yii::$app->request->get();
 
-        if (isset($_GET['page']) AND !empty($_GET['page'])) {
-            $_GET['page'] = intval($_GET['page']);
-            $pageCounter = $_GET['page'];
+        if (!empty($_GET['res_title']) || !empty($_GET['res_category']) || !empty($_GET['res_id_yearexp']) || !empty($_GET['res_id_hidegree']) || !empty($_GET['res_joblocation'])){
+            // var_dump($post);
+            $query = SResume::find()->where(['res_statuspost'=>'r']);
+
+            if ($get['res_title'] != null) {
+                $query->andWhere(['LIKE','res_title', $get['res_title']]);
+            }
+            if ($get['res_category'] != null) {
+                $query->andWhere(['LIKE','res_category', $get['res_category']]);
+            }
+            if ($get['res_id_yearexp'] != null) {
+                $query->andWhere(['LIKE','res_id_yearexp', $get['res_id_yearexp']]);
+            }
+            if ($get['res_id_hidegree'] != null) {
+                $query->andWhere(['LIKE','res_id_hidegree', $get['res_id_hidegree']]);
+            }
+            if ($get['res_joblocation'] != null) {
+                $query->andWhere(['LIKE','res_joblocation', $get['res_joblocation']]);
+            }
+
+            $resultSearch = $query->joinWith(['resIdSeek','resIdJobcategory','resJoblocation'])->asArray()->all();
+
+            return $this->render('list_search',[
+                    'resultSearch' => $resultSearch,
+                ]);
         }else{
-            $pageCounter = 1;
+            $itemPerPage = 8;
+            $itemCount = count(SResume::find()->where(['res_statuspost'=>'r'])->all());
+
+            if (isset($_GET['page']) AND !empty($_GET['page'])) {
+                $_GET['page'] = intval($_GET['page']);
+                $pageCounter = $_GET['page'];
+            }else{
+                $pageCounter = 1;
+            }
+            $offsetPart = ($pageCounter - 1) * $itemPerPage;
+
+            $data['pageCounter'] = $pageCounter;
+            $data['pageTotal'] = ceil($itemCount/$itemPerPage);
+
+            $data['all_resume'] = SResume::find()->joinWith(['resIdSeek','resIdJobcategory','resJoblocation'])->limit($itemPerPage)->offset($offsetPart)->where(['res_statuspost'=>'r'])->asArray()->all();
+
+            $data['all_yexp'] = CYearexperience::find()->asArray()->all();
+            $data['all_jobcategory'] = CJobcategory::find()->asArray()->all();
+            $data['all_hdegree'] = SHighesdegree::find()->asArray()->all();
+            $data['joblocation'] = MLocation::find()->asArray()->all();
+            return $this->render('list_resume', $data);
         }
-        $offsetPart = ($pageCounter - 1) * $itemPerPage;
-
-        $data['pageCounter'] = $pageCounter;
-        $data['pageTotal'] = ceil($itemCount/$itemPerPage);
-
-        $data['all_resume'] = SResume::find()->joinWith(['resIdSeek','resIdJobcategory'])->limit($itemPerPage)->offset($offsetPart)->where(['res_statuspost'=>'r'])->asArray()->all();
-
-        $data['all_yexp'] = CYearexperience::find()->asArray()->all();
-        $data['all_jobcategory'] = CJobcategory::find()->asArray()->all();
-        $data['all_hdegree'] = SHighesdegree::find()->asArray()->all();
-        return $this->render('list_resume', $data);
     }
 
     public function actionResumeDetail($id)

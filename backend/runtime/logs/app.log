@@ -309,3 +309,1171 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1485924558.864
     'REQUEST_TIME' => 1485924558
 ]
+2017-02-01 11:25:34 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "m-location/index". in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('m-location/inde...', Array)
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-01 11:25:30 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '52801'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/m-location/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/m-location/index'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485944729.999
+    'REQUEST_TIME' => 1485944729
+]
+2017-02-01 11:25:40 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "template/assets/css/site.css". in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('template/assets...', Array)
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-01 11:25:40 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_csrf-backend' => '5890f81b82eaa711681287cbf3c3ebbdf8031413549f91dcb1ad4dddefe1d79ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wRV0x2JpUMPCKG6H4W7CWLvdkI1-kUHC\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://localhost/pf_jobmonster/backend/web/m-location/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _csrf-backend=5890f81b82eaa711681287cbf3c3ebbdf8031413549f91dcb1ad4dddefe1d79ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wRV0x2JpUMPCKG6H4W7CWLvdkI1-kUHC%22%3B%7D'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '52832'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485944740.17
+    'REQUEST_TIME' => 1485944740
+]
+2017-02-01 11:28:42 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Trying to get property of non-object in C:\xampp\htdocs\pf_jobmonster\backend\views\layouts\page_header.php:159
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\backend\views\layouts\page_header.php(159): yii\base\ErrorHandler->handleError(8, 'Trying to get p...', 'C:\\xampp\\htdocs...', 159, Array)
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#3 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, NULL)
+#4 C:\xampp\htdocs\pf_jobmonster\backend\views\layouts\main.php(51): yii\base\View->render('page_header')
+#5 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\View.php(326): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\xampp\\htdocs...', Array)
+#7 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\xampp\\htdocs...', Array, Object(backend\controllers\MLocationController))
+#8 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\n<div class="co...')
+#9 C:\xampp\htdocs\pf_jobmonster\backend\controllers\MLocationController.php(43): yii\base\Controller->render('index', Array)
+#10 [internal function]: backend\controllers\MLocationController->actionIndex()
+#11 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#14 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('m-location/inde...', Array)
+#15 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#17 {main}
+2017-02-01 11:28:40 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_csrf-backend' => 'f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mQc8MNvgytsR-iu82awCDsWaLKaHAtPe\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _csrf-backend=f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mQc8MNvgytsR-iu82awCDsWaLKaHAtPe%22%3B%7D'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '53122'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/m-location/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/m-location/index'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485944920.485
+    'REQUEST_TIME' => 1485944920
+]
+2017-02-01 11:29:36 [::1][-][-][error][Error] Error: Class 'backend\controllers\AccessControl' not found in C:\xampp\htdocs\pf_jobmonster\backend\controllers\MLocationController.php:24
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Component.php(645): backend\controllers\MLocationController->behaviors()
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Component.php(528): yii\base\Component->ensureBehaviors()
+#2 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#4 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#5 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('index', Array)
+#6 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('m-location/inde...', Array)
+#7 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#9 {main}
+2017-02-01 11:29:36 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_csrf-backend' => 'f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mQc8MNvgytsR-iu82awCDsWaLKaHAtPe\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _csrf-backend=f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mQc8MNvgytsR-iu82awCDsWaLKaHAtPe%22%3B%7D'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '53186'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/m-location/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/m-location/index'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485944976.845
+    'REQUEST_TIME' => 1485944976
+]
+2017-02-01 11:29:37 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2-debug\LogTarget.php:57
+
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2-debug\LogTarget.php(57): serialize(Array)
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2-debug\LogTarget.php(118): yii\debug\LogTarget->export()
+#2 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\log\Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2017-02-01 11:29:36 [::1][-][-][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_csrf-backend' => 'f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mQc8MNvgytsR-iu82awCDsWaLKaHAtPe\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _csrf-backend=f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mQc8MNvgytsR-iu82awCDsWaLKaHAtPe%22%3B%7D'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '53186'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/m-location/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/m-location/index'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485944976.845
+    'REQUEST_TIME' => 1485944976
+]
+2017-02-01 11:29:54 [::1][-][cje8cv6b6ccfr9u30e5m3l0ln2][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "template/assets/css/site.css". in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('template/assets...', Array)
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-01 11:29:54 [::1][-][cje8cv6b6ccfr9u30e5m3l0ln2][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_csrf-backend' => 'f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mQc8MNvgytsR-iu82awCDsWaLKaHAtPe\";}'
+    'advanced-backend' => 'cje8cv6b6ccfr9u30e5m3l0ln2'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/pf_jobmonster/backend/web/m-location/index'
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://localhost/pf_jobmonster/backend/web/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _csrf-backend=f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mQc8MNvgytsR-iu82awCDsWaLKaHAtPe%22%3B%7D; advanced-backend=cje8cv6b6ccfr9u30e5m3l0ln2'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '53214'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485944994.181
+    'REQUEST_TIME' => 1485944994
+]
+2017-02-01 11:30:03 [::1][1][jalf4upr1kgp2crft3cadu1fj5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "template/assets/css/site.css". in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('template/assets...', Array)
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-01 11:30:03 [::1][1][jalf4upr1kgp2crft3cadu1fj5][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_csrf-backend' => 'f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mQc8MNvgytsR-iu82awCDsWaLKaHAtPe\";}'
+    'advanced-backend' => 'jalf4upr1kgp2crft3cadu1fj5'
+    '_identity-backend' => '5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"8C41lYi3zSKvY6-wXsz_cKw_hU30J5TE\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/pf_jobmonster/backend/web/m-location/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://localhost/pf_jobmonster/backend/web/m-location/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _csrf-backend=f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mQc8MNvgytsR-iu82awCDsWaLKaHAtPe%22%3B%7D; advanced-backend=jalf4upr1kgp2crft3cadu1fj5; _identity-backend=5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228C41lYi3zSKvY6-wXsz_cKw_hU30J5TE%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '53224'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485945003.028
+    'REQUEST_TIME' => 1485945003
+]
+2017-02-01 12:03:40 [::1][1][jalf4upr1kgp2crft3cadu1fj5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "template/assets/css/site.css". in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('template/assets...', Array)
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-01 12:03:40 [::1][1][jalf4upr1kgp2crft3cadu1fj5][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_csrf-backend' => 'f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mQc8MNvgytsR-iu82awCDsWaLKaHAtPe\";}'
+    'advanced-backend' => 'jalf4upr1kgp2crft3cadu1fj5'
+    '_identity-backend' => '5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"8C41lYi3zSKvY6-wXsz_cKw_hU30J5TE\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/pf_jobmonster/backend/web/m-location/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://localhost/pf_jobmonster/backend/web/c-company/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _csrf-backend=f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mQc8MNvgytsR-iu82awCDsWaLKaHAtPe%22%3B%7D; advanced-backend=jalf4upr1kgp2crft3cadu1fj5; _identity-backend=5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228C41lYi3zSKvY6-wXsz_cKw_hU30J5TE%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '55511'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485947019.99
+    'REQUEST_TIME' => 1485947019
+]
+2017-02-01 12:03:47 [::1][1][jalf4upr1kgp2crft3cadu1fj5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "template/assets/css/site.css". in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('template/assets...', Array)
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-01 12:03:46 [::1][1][jalf4upr1kgp2crft3cadu1fj5][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_csrf-backend' => 'f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mQc8MNvgytsR-iu82awCDsWaLKaHAtPe\";}'
+    'advanced-backend' => 'jalf4upr1kgp2crft3cadu1fj5'
+    '_identity-backend' => '5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"8C41lYi3zSKvY6-wXsz_cKw_hU30J5TE\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/pf_jobmonster/backend/web/m-location/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://localhost/pf_jobmonster/backend/web/c-jobfinder/index?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _csrf-backend=f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mQc8MNvgytsR-iu82awCDsWaLKaHAtPe%22%3B%7D; advanced-backend=jalf4upr1kgp2crft3cadu1fj5; _identity-backend=5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228C41lYi3zSKvY6-wXsz_cKw_hU30J5TE%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '55519'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485947026.966
+    'REQUEST_TIME' => 1485947026
+]
+2017-02-01 12:14:54 [::1][1][jalf4upr1kgp2crft3cadu1fj5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "template/assets/css/site.css". in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('template/assets...', Array)
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-01 12:14:54 [::1][1][jalf4upr1kgp2crft3cadu1fj5][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_csrf-backend' => 'f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mQc8MNvgytsR-iu82awCDsWaLKaHAtPe\";}'
+    'advanced-backend' => 'jalf4upr1kgp2crft3cadu1fj5'
+    '_identity-backend' => '5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"8C41lYi3zSKvY6-wXsz_cKw_hU30J5TE\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/pf_jobmonster/backend/web/m-location/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://localhost/pf_jobmonster/backend/web/c-explevel/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _csrf-backend=f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mQc8MNvgytsR-iu82awCDsWaLKaHAtPe%22%3B%7D; advanced-backend=jalf4upr1kgp2crft3cadu1fj5; _identity-backend=5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228C41lYi3zSKvY6-wXsz_cKw_hU30J5TE%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '56067'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485947694.79
+    'REQUEST_TIME' => 1485947694
+]
+2017-02-01 12:30:34 [::1][1][jalf4upr1kgp2crft3cadu1fj5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "template/assets/css/site.css". in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('template/assets...', Array)
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-01 12:30:34 [::1][1][jalf4upr1kgp2crft3cadu1fj5][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_csrf-backend' => 'f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mQc8MNvgytsR-iu82awCDsWaLKaHAtPe\";}'
+    'advanced-backend' => 'jalf4upr1kgp2crft3cadu1fj5'
+    '_identity-backend' => '5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"8C41lYi3zSKvY6-wXsz_cKw_hU30J5TE\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/pf_jobmonster/backend/web/m-location/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://localhost/pf_jobmonster/backend/web/c-jobfinder/index?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _csrf-backend=f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mQc8MNvgytsR-iu82awCDsWaLKaHAtPe%22%3B%7D; advanced-backend=jalf4upr1kgp2crft3cadu1fj5; _identity-backend=5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228C41lYi3zSKvY6-wXsz_cKw_hU30J5TE%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '56787'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485948634.586
+    'REQUEST_TIME' => 1485948634
+]
+2017-02-01 13:45:08 [::1][1][jalf4upr1kgp2crft3cadu1fj5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "template/assets/css/site.css". in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('template/assets...', Array)
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-01 13:45:08 [::1][1][jalf4upr1kgp2crft3cadu1fj5][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_csrf-backend' => 'f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mQc8MNvgytsR-iu82awCDsWaLKaHAtPe\";}'
+    'advanced-backend' => 'jalf4upr1kgp2crft3cadu1fj5'
+    '_identity-backend' => '5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"8C41lYi3zSKvY6-wXsz_cKw_hU30J5TE\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/pf_jobmonster/backend/web/m-location/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://localhost/pf_jobmonster/backend/web/c-jobfinder/index?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _csrf-backend=f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mQc8MNvgytsR-iu82awCDsWaLKaHAtPe%22%3B%7D; advanced-backend=jalf4upr1kgp2crft3cadu1fj5; _identity-backend=5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228C41lYi3zSKvY6-wXsz_cKw_hU30J5TE%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '61104'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485953108.582
+    'REQUEST_TIME' => 1485953108
+]
+2017-02-01 13:45:13 [::1][1][jalf4upr1kgp2crft3cadu1fj5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "template/assets/css/site.css". in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('template/assets...', Array)
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-01 13:45:13 [::1][1][jalf4upr1kgp2crft3cadu1fj5][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_csrf-backend' => 'f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mQc8MNvgytsR-iu82awCDsWaLKaHAtPe\";}'
+    'advanced-backend' => 'jalf4upr1kgp2crft3cadu1fj5'
+    '_identity-backend' => '5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"8C41lYi3zSKvY6-wXsz_cKw_hU30J5TE\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/pf_jobmonster/backend/web/m-location/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://localhost/pf_jobmonster/backend/web/m-location/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _csrf-backend=f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mQc8MNvgytsR-iu82awCDsWaLKaHAtPe%22%3B%7D; advanced-backend=jalf4upr1kgp2crft3cadu1fj5; _identity-backend=5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228C41lYi3zSKvY6-wXsz_cKw_hU30J5TE%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '61106'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485953113.221
+    'REQUEST_TIME' => 1485953113
+]
+2017-02-01 14:56:38 [::1][1][jalf4upr1kgp2crft3cadu1fj5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "template/assets/css/site.css". in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('template/assets...', Array)
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-01 14:56:38 [::1][1][jalf4upr1kgp2crft3cadu1fj5][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_csrf-backend' => 'f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mQc8MNvgytsR-iu82awCDsWaLKaHAtPe\";}'
+    'advanced-backend' => 'jalf4upr1kgp2crft3cadu1fj5'
+    '_identity-backend' => '5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"8C41lYi3zSKvY6-wXsz_cKw_hU30J5TE\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/pf_jobmonster/backend/web/m-location/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://localhost/pf_jobmonster/backend/web/s-seeker/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _csrf-backend=f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mQc8MNvgytsR-iu82awCDsWaLKaHAtPe%22%3B%7D; advanced-backend=jalf4upr1kgp2crft3cadu1fj5; _identity-backend=5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228C41lYi3zSKvY6-wXsz_cKw_hU30J5TE%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '62004'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485957398.87
+    'REQUEST_TIME' => 1485957398
+]
+2017-02-01 14:56:43 [::1][1][jalf4upr1kgp2crft3cadu1fj5][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "template/assets/css/site.css". in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Module.php:462
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('template/assets...', Array)
+#1 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\web\Application.php:112
+Stack trace:
+#0 C:\xampp\htdocs\pf_jobmonster\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\pf_jobmonster\backend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-02-01 14:56:43 [::1][1][jalf4upr1kgp2crft3cadu1fj5][info][application] $_COOKIE = [
+    '_identity' => '9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"100\",\"test100key\",2592000]\";}'
+    '_identity-frontend' => 'de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-\",2592000]\";}'
+    '__utma' => '111872281.1703429293.1478783338.1481168771.1485928333.5'
+    '__utmz' => '111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)'
+    '_csrf-backend' => 'f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"mQc8MNvgytsR-iu82awCDsWaLKaHAtPe\";}'
+    'advanced-backend' => 'jalf4upr1kgp2crft3cadu1fj5'
+    '_identity-backend' => '5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"8C41lYi3zSKvY6-wXsz_cKw_hU30J5TE\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/pf_jobmonster/backend/web/m-location/index'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/css,*/*;q=0.1'
+    'HTTP_REFERER' => 'http://localhost/pf_jobmonster/backend/web/s-resume/index?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.8,id;q=0.6,ms;q=0.4'
+    'HTTP_COOKIE' => '_identity=9688d28da580b51de4ce50349870f2a2ecb7c44738202e1a1dde55c2c3333b1ba%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22100%22%2C%22test100key%22%2C2592000%5D%22%3B%7D; _identity-frontend=de08f59f85d1a5ff45d0a1431e1bc8db606c7b02b8e60f3bbffc4ad13a52fc6da%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22p45woGWfR5iqbFxXHdJJdTYiTV0wQ4m-%22%2C2592000%5D%22%3B%7D; __utma=111872281.1703429293.1478783338.1481168771.1485928333.5; __utmz=111872281.1478783338.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _csrf-backend=f2ab5ae6c887eb93db7f2e3c5d42207a866f0843bded36ee4b41a3e8efd21eafa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22mQc8MNvgytsR-iu82awCDsWaLKaHAtPe%22%3B%7D; advanced-backend=jalf4upr1kgp2crft3cadu1fj5; _identity-backend=5c6ca2a5fecffe3f7dfa0d4bac3c580eca0e87e585873263addda92fe4784a1da%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%228C41lYi3zSKvY6-wXsz_cKw_hU30J5TE%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\python\\Scripts\\;C:\\python\\;C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\bin;C:\\Program Files (x86)\\Common Files\\Intel\\Shared Files\\cpp\\bin\\Intel64;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\xampp\\mysql\\bin;C:\\xampp\\php;C:\\Program Files\\Git\\cmd;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;F:\\Program\\Bracket\\command;C:\\ProgramData\\ComposerSetup\\bin;C:\\python;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Users\\Muhammad Masruhin\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Muhammad Masruhin\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/7.0.9'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/pf_jobmonster/backend/web/index.php'
+    'REMOTE_PORT' => '62004'
+    'REDIRECT_URL' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pf_jobmonster/backend/web/template/assets/css/site.css'
+    'SCRIPT_NAME' => '/pf_jobmonster/backend/web/index.php'
+    'PHP_SELF' => '/pf_jobmonster/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485957403.888
+    'REQUEST_TIME' => 1485957403
+]
