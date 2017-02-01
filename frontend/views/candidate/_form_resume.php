@@ -8,6 +8,7 @@ use common\models\SHighesdegree;
 use common\models\CYearexperience;
 use common\models\CJobcategory;
 use common\models\CExplevel;
+use common\models\MLocation;
 
 $SSeeker = ArrayHelper::map(SSeeker::find()->all(), 'seek_id', 'seek_name');
 $MLanguage = ArrayHelper::map(MLanguage::find()->all(), 'language_id', 'language_name');
@@ -15,6 +16,7 @@ $SHighesdegree = ArrayHelper::map(SHighesdegree::find()->all(), 'hdegree_id', 'h
 $CYearexperience = ArrayHelper::map(CYearexperience::find()->all(), 'yearexp_id', 'yearexp_value');
 $CJobcategory = ArrayHelper::map(CJobcategory::find()->all(), 'jobcategory_id', 'jobcategory_name');
 $CExplevel = ArrayHelper::map(CExplevel::find()->all(), 'explevel_id', 'explevel_name');
+$MLocation = ArrayHelper::map(MLocation::find()->all(), 'location_id', 'location_name');
 ?>
 <?php $form = ActiveForm::begin(['action' => $model->isNewRecord ? 'create-resume' : ['update-resume', 'id'=>$model->res_id] ,'options' => ['enctype' => 'multipart/form-data']]); ?>
 	<div class="resume-form">
@@ -59,7 +61,7 @@ $CExplevel = ArrayHelper::map(CExplevel::find()->all(), 'explevel_id', 'explevel
 				<div class="form-group">
 					<label for="job_location" class="col-sm-5 control-label">Job Location</label>
 					<div class="col-sm-7">
-						<?= $form->field($model, 'res_joblocation')->textInput(['maxlength' => true])->label(false) ?>
+						<?= $form->field($model, 'res_joblocation')->dropDownList($MLocation, ['class'=>'form-control-chosen form-control'])->label(false) ?>
 				    </div>
 				</div>
 				<div class="form-group">

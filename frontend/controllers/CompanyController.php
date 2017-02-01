@@ -148,7 +148,7 @@ class CompanyController extends Controller
     {
         $id_user = Yii::$app->user->identity->id;
         $sel_company = CCompany::find()->where(['company_id_user'=>$id_user])->asArray()->one();
-        $all_job = CJobfinder::find()->where(['jobfinder_id_company'=>$sel_company['company_id']])->asArray()->all();
+        $all_job = CJobfinder::find()->joinWith(['jobfinderLocation'])->where(['jobfinder_id_company'=>$sel_company['company_id']])->asArray()->all();
         return $this->render('company_job_manaje',[
                 'sel_company' => $sel_company,
                 'all_job' => $all_job,

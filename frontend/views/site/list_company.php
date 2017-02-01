@@ -62,7 +62,7 @@ $this->title = "Job Monster - Companies"
 										</p>
 									</div>
 									<div class="show-view-more">
-										<a class="btn btn-primary" href="<?=Url::to(['site/company-detail','id' => $company_list['company_id']])?>">View more </a>
+										<a class="btn btn-primary" href="<?=Url::to(['site/company-detail','id' => $company_list['company_id']])?>" class="link">View more </a>
 									</div>
 								</div>
 							</article>
@@ -74,9 +74,9 @@ $this->title = "Job Monster - Companies"
 								if ($pg == $pageCounter) {?>
 								<span class='page-numbers current'><?=$pg?></span>
 							<?php } else { ?>
-								<a class='page-numbers' href="<?=Url::to(['site/resumelist','page'=>$pg])?>"><?=$pg?></a>
+								<a class='page-numbers link' href="<?=Url::to(['site/resumelist','page'=>$pg])?>"><?=$pg?></a>
 							<?php } } ?>
-								<a class="next page-numbers" href="<?=Url::to(['site/resumelist','page'=>$pageTotal])?>">
+								<a class="next page-numbers link" href="<?=Url::to(['site/resumelist','page'=>$pageTotal])?>">
 									<i class="fa fa-long-arrow-right"></i>
 								</a>
 							</li>

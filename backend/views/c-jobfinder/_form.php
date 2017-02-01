@@ -11,7 +11,7 @@ use common\models\CAcdegree;
 use common\models\CDresscode;
 use common\models\CTimecategory;
 use common\models\CJobcategory;
-
+use common\models\MLocation;
 
 $CSalaryoffer = ArrayHelper::map(CSalaryoffer::find()->all(), 'salaryoffer_id', 'salaryoffer_value');
 $CExplevel = ArrayHelper::map(CExplevel::find()->all(), 'explevel_id', 'explevel_name');
@@ -21,6 +21,7 @@ $CDresscode = ArrayHelper::map(CDresscode::find()->all(), 'dresscode_id', 'dress
 $CTimecategory = ArrayHelper::map(CTimecategory::find()->all(), 'timecategory_id', 'timecategory_name');
 $CJobcategory = ArrayHelper::map(CJobcategory::find()->all(), 'jobcategory_id', 'jobcategory_name');
 $CCompany = ArrayHelper::map(CCompany::find()->all(), 'company_id', 'company_name');
+$MLocation = ArrayHelper::map(MLocation::find()->all(), 'location_id', 'location_name');
 /* @var $this yii\web\View */
 /* @var $model app\models\CJobfinder */
 /* @var $form yii\widgets\ActiveForm */
@@ -54,7 +55,7 @@ $CCompany = ArrayHelper::map(CCompany::find()->all(), 'company_id', 'company_nam
 
     <?= $form->field($model, 'jobfinder_timecategory')->dropDownList($CTimecategory) ?>
 
-    <?= $form->field($model, 'jobfinder_location')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'jobfinder_location')->dropDownList($MLocation) ?>
 
     <?= $form->field($model, 'jobfinder_category')->dropDownList($CJobcategory) ?>
 

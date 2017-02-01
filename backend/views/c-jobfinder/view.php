@@ -54,7 +54,11 @@ $this->params['breadcrumbs'][] = $this->title;
             'attribute'=>'jobfinderCategory.jobcategory_name',
             'label'=>'Jobfinder Timecategory',
             ],
-            'jobfinder_location',
+            [
+            'attribute'=>'jobfinderLocation.location_name',
+            'label'=>'Jobfinder Location',
+            ],
+            // 'jobfinder_location',
             'jobfinder_closedate',
             [
             'attribute'=>'jobfinder_statuspost',

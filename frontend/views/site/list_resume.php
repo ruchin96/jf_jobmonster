@@ -47,7 +47,7 @@
 											</div>
 											<div class="loop-item-content">
 												<h2 class="loop-item-title">
-													<a href="<?=Url::to(['site/resume-detail','id'=>$resume['res_id']])?>"><?=$resume['resIdSeek']['seek_name']?></a>
+													<a href="<?=Url::to(['site/resume-detail','id'=>$resume['res_id']])?>"  class="link"><?=$resume['resIdSeek']['seek_name']?></a>
 												</h2>
 											</div>
 										</div>
@@ -70,9 +70,9 @@
 							if ($pg == $pageCounter) {?>
 							<span class='page-numbers current'><?=$pg?></span>
 						<?php } else { ?>
-							<a class='page-numbers' href="<?=Url::to(['site/resumelist','page'=>$pg])?>"><?=$pg?></a>
+							<a class='page-numbers link' href="<?=Url::to(['site/resumelist','page'=>$pg])?>"><?=$pg?></a>
 						<?php } } ?>
-							<a class="next page-numbers" href="<?=Url::to(['site/resumelist','page'=>$pageTotal])?>">
+							<a class="next page-numbers link" href="<?=Url::to(['site/resumelist','page'=>$pageTotal])?>">
 								<i class="fa fa-long-arrow-right"></i>
 							</a>
 						</li>

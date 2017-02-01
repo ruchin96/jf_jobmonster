@@ -27,6 +27,8 @@ use common\models\SBookmark;
 use common\models\BFeature;
 use common\models\BTestimonial;
 use common\models\BTeam;
+use common\models\BPost;
+use common\models\MLocation;
 
 /**
  * Site controller
@@ -88,26 +90,37 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $jobcategory = CJobcategory::find()->asArray()->all();
+        $joblocation = MLocation::find()->asArray()->all();
         $features = BFeature::find()->limit(6)->orderBy(['feature_id'=>SORT_DESC])->asArray()->all();
+        $blogs = BPost::find()->joinWith(['blogIdCategory'])->limit(6)->orderBy(['blog_id'=>SORT_DESC])->asArray()->all();
         $testimonial = BTestimonial::find()->limit(6)->orderBy(['testimonial_id'=>SORT_DESC])->asArray()->all();
         $recentjob = CJobfinder::find()
         ->joinWith([
             'jobfinderTimecategory',
-            'jobfinderIdCompany'
+            'jobfinderIdCompany',
+            'jobfinderLocation',
         ])
         ->limit(4)->orderBy(['jobfinder_updatedat'=>SORT_DESC])
         ->where(['jobfinder_statuspost'=>'r'])
         ->asArray()->all();
 
-        $post = Yii::$app->request->post();
+        $post = Yii::$app->request->get();
 
         if (count($post)>0){
-            // var_dump($post);die();
-            $resultSearch = CJobfinder::find()
-            ->orWhere('like', 'jobfinder_jobname', $post['jobfinder_jobname'])
-            ->orWhere('like', 'jobfinder_category', $post['jobfinder_category'])
-            ->orWhere('like', 'jobfinder_location', $post['jobfinder_location'])
-            ->asArray()->all();
+            // var_dump($post);
+            $query = CJobfinder::find();
+
+            if ($post['jobfinder_jobname'] != null) {
+                $query->andWhere(['LIKE','jobfinder_jobname', $post['jobfinder_jobname']]);
+            }
+            if ($post['jobfinder_category'] != null) {
+                $query->andWhere(['LIKE','jobfinder_category', $post['jobfinder_category']]);
+            }
+            if ($post['jobfinder_location'] != null) {
+                $query->andWhere(['LIKE','jobfinder_location', $post['jobfinder_location']]);
+            }
+            $resultSearch = $query->asArray()->all();
+
             return $this->render('list_job_search',[
                     'resultSearch' => $resultSearch,
                 ]);
@@ -117,6 +130,8 @@ class SiteController extends Controller
                     'recentjob' => $recentjob,
                     'features' => $features,
                     'testimonial' => $testimonial,
+                    'joblocation' => $joblocation,
+                    'blogs' => $blogs,
                 ]);
         }
     }
@@ -162,8 +177,10 @@ class SiteController extends Controller
         $data['sel_company'] = CCompany::find()->where(['company_id'=>$id])->asArray()->one();
 
         $data['com_jobs'] = CJobfinder::find()
-        ->joinWith(['jobfinderTimecategory'])
-        ->limit($itemPerPage)
+        ->joinWith([
+            'jobfinderTimecategory',
+            'jobfinderLocation',
+        ])->limit($itemPerPage)
         ->offset($offsetPart)
         ->where([
             'jobfinder_statuspost'=>'r',
@@ -194,7 +211,8 @@ class SiteController extends Controller
         $data['all_job'] = CJobfinder::find()
         ->joinWith([
             'jobfinderTimecategory',
-            'jobfinderIdCompany'
+            'jobfinderIdCompany',
+            'jobfinderLocation',
         ])
         ->limit($itemPerPage)
         ->offset($offsetPart)
@@ -205,7 +223,6 @@ class SiteController extends Controller
 
     public function actionJobsDetail($id)
     {
-        $id_user = Yii::$app->user->identity->id;
         if(count(Yii::$app->request->post())>0){
             $this::SaveJob();
         }
@@ -219,16 +236,14 @@ class SiteController extends Controller
             'jobfinderCategory',
             'jobfinderTimecategory',
             'jobfinderIdCompany',
+            'jobfinderLocation',
         ])
         ->where(['jobfinder_id'=>$id])
         ->asArray()->one();
 
-        $sseeker = SSeeker::find()->where(['seek_id_user'=>$id_user])->asArray()->one();
-
         $all_bookmark = SBookmark::find()->asArray()->all();
         return $this->render('detail_job', [
                 'sel_jobs' => $sel_jobs,
-                'sseeker' => $sseeker,
                 'all_bookmark' => $all_bookmark,
             ]);
     }
@@ -299,6 +314,35 @@ class SiteController extends Controller
                 'all_skill' => $all_skill,
             ]);
     }
+
+    public function actionResumePrint($id)
+    {
+        $sel_resume = SResume::find()
+        ->joinWith([
+            'resIdSeek',
+            'resIdSeek.seekIdUser',
+            'resIdJobcategory',
+            'resIdHidegree',
+            'resIdYearexp',
+            'resIdJobcategory',
+            'resIdJoblevel',
+            'resIdLanguage'
+        ])
+        ->where(['res_id'=>$id])
+        ->asArray()->one();
+
+        $all_edu = SEducation::find()->where(['edu_id_res'=>$id])->orderBy(['edu_start'=>SORT_ASC])->asArray()->all();
+        $all_work = SWorkexperience::find()->where(['work_id_res'=>$id])->orderBy(['work_start'=>SORT_ASC])->asArray()->all();
+        $all_skill = SSkillsummary::find()->where(['skill_id_res'=>$id])->asArray()->all();
+
+        return $this->renderPartial('print_resume', [
+                'sel_resume' => $sel_resume,
+                'all_edu' => $all_edu,
+                'all_work' => $all_work,
+                'all_skill' => $all_skill,
+            ]);
+    }
+
     /**
      * Logs in a user.
      *

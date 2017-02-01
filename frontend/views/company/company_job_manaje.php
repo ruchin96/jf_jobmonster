@@ -27,7 +27,7 @@ echo $this->render('company_header',['sel_company' => $sel_company]);
 									<i class="fa fa-caret-down"></i>
 								</div>
 								<button type="button" class="btn btn-primary">Go</button>
-								<a href="<?=Url::to(['company/create-job'])?>" class="btn btn-primary pull-right">Create a new job</a>
+								<a href="<?=Url::to(['company/create-job'])?>" class="link btn btn-primary pull-right">Create a new job</a>
 							</div>
 						</div>
 						<div class="member-manage-table">
@@ -72,7 +72,7 @@ echo $this->render('company_header',['sel_company' => $sel_company]);
 											</a>
 										</td>
 										<td class="hidden-xs hidden-sm">
-											<i class="fa fa-map-marker"></i>&nbsp;<em><?=$job['jobfinder_location']?></em>
+											<i class="fa fa-map-marker"></i>&nbsp;<em><?=$job['jobfinderLocation']['location_name']?></em>
 										</td>
 										<td class="job-manage-expires hidden-xs">
 											<span><i class="fa fa-calendar"></i>&nbsp;<em><?= $formatter->asDate($job['jobfinder_closedate'], 'long')?></em></span>
@@ -86,7 +86,7 @@ echo $this->render('company_header',['sel_company' => $sel_company]);
 											</span>
 										</td>
 										<td class="member-manage-actions hidden-xs text-center">
-											<a href="<?=Url::to(['company/update-job', 'id'=>$job['jobfinder_id']])?>" class="member-manage-action" data-toggle="tooltip" title="Edit Job">
+											<a href="<?=Url::to(['company/update-job', 'id'=>$job['jobfinder_id']])?>" class="member-manage-action link" data-toggle="tooltip" title="Edit Job">
 												<i class="fa fa-pencil"></i>
 											</a>
 											<a href="#" class="member-manage-action action-delete modal-btn" data-url="<?=Url::to(['company/modal-delete-job', 'id'=>$job['jobfinder_id']])?>"  data-toggle="tooltip" title="Delete Job">

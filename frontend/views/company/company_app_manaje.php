@@ -44,7 +44,7 @@ $formatter = Yii::$app->formatter;
 										</td>
 										</td>
 										<td class="hidden-xs hidden-sm w-15">
-											<a href="<?=Url::to(['site/resume-detail', 'id'=>$app['app_id_res']])?>"></a>
+											<a href="<?=Url::to(['site/resume-detail'])?>" class="btn btn-info btn-xs link">Show Resume</a>
 										</td>
 										<td class="hidden-xs hidden-sm w-15">
 											<div class="loop-item-wrap">

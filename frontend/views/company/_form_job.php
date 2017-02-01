@@ -10,7 +10,7 @@ use common\models\CAcdegree;
 use common\models\CDresscode;
 use common\models\CTimecategory;
 use common\models\CJobcategory;
-
+use common\models\MLocation;
 
 $CSalaryoffer = ArrayHelper::map(CSalaryoffer::find()->all(), 'salaryoffer_id', 'salaryoffer_value');
 $CExplevel = ArrayHelper::map(CExplevel::find()->all(), 'explevel_id', 'explevel_name');
@@ -20,6 +20,7 @@ $CDresscode = ArrayHelper::map(CDresscode::find()->all(), 'dresscode_id', 'dress
 $CTimecategory = ArrayHelper::map(CTimecategory::find()->all(), 'timecategory_id', 'timecategory_name');
 $CJobcategory = ArrayHelper::map(CJobcategory::find()->all(), 'jobcategory_id', 'jobcategory_name');
 $CCompany = ArrayHelper::map(CCompany::find()->all(), 'company_id', 'company_name');
+$MLocation = ArrayHelper::map(MLocation::find()->all(), 'location_id', 'location_name');
 ?>
 <?php $form = ActiveForm::begin(['action' => $model->isNewRecord ? 'create-job' : ['update-job', 'id'=>$model->jobfinder_id] ,'options' => ['enctype' => 'multipart/form-data']]); ?>
 	<div id="step_content_form" class="jstep-content">
@@ -72,19 +73,19 @@ $CCompany = ArrayHelper::map(CCompany::find()->all(), 'company_id', 'company_nam
 						<div class="form-group row">
 							<label for="location" class="col-sm-3 control-label">Job Location</label>
 							<div class="col-sm-9">
-								<?= $form->field($model, 'jobfinder_location')->textInput(['maxlength' => true, 'placeholder'=>'Describe your job location'])->label(false) ?>
+								<?= $form->field($model, 'jobfinder_location')->dropDownList($MLocation, ['class'=>'form-control-chosen form-control'])->label(false) ?>
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="type" class="col-sm-3 control-label">Job Type</label>
 							<div class="col-sm-9">
-								<?= $form->field($model, 'jobfinder_timecategory')->dropDownList($CTimecategory)->label(false) ?>
+								<?= $form->field($model, 'jobfinder_timecategory')->dropDownList($CTimecategory, ['class'=>'form-control-chosen form-control'])->label(false) ?>
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="category" class="col-sm-3 control-label">Job Category</label>
 							<div class="col-sm-9">
-								<?= $form->field($model, 'jobfinder_category')->dropDownList($CJobcategory)->label(false) ?>
+								<?= $form->field($model, 'jobfinder_category')->dropDownList($CJobcategory, ['class'=>'form-control-chosen form-control'])->label(false) ?>
 							</div>
 						</div>
 						<div class="form-group row">
@@ -114,7 +115,7 @@ $CCompany = ArrayHelper::map(CCompany::find()->all(), 'company_id', 'company_nam
 						<div class="form-group row">
 							<label class="col-sm-3 control-label">Academic Degree</label>
 							<div class="col-sm-9">
-								<?= $form->field($model, 'jobfinder_acdegree')->dropDownList($CAcdegree)->label(false) ?>
+								<?= $form->field($model, 'jobfinder_acdegree')->dropDownList($CAcdegree, ['class'=>'form-control-chosen form-control'])->label(false) ?>
 							</div>
 						</div>
 						<div class="form-group row">

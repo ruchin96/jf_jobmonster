@@ -1,3 +1,8 @@
+<?php
+use yii\helpers\Url;
+use yii\helpers\Html;
+// var_dump($resultSearch->params);die();
+?>
 <div class="noo-page-heading">
 	<div class="container-boxed max parallax-content">
 		<div class="page-heading-info">
@@ -25,7 +30,7 @@
 								</div>
 								<div class="loop-item-content">
 									<h2 class="loop-item-title">
-										<a href="#"><?=$result['jobfinder_jobname']?></a>
+										<?=$result['jobfinder_jobname']?>
 									</h2>
 									<p class="content-meta">
 										<span class="job-company">
@@ -38,7 +43,7 @@
 										</span>
 										<span class="job-location">
 											<i class="fa fa-map-marker"></i>
-											<a href="#"><em>Kuta, Indonesia</em></a>
+											<a href="#"><em><?=$result['jobfinder_location']?></em></a>
 										</span>
 										<span>
 											<time class="entry-date" datetime="2015-08-18T01:40:23+00:00">
@@ -49,7 +54,7 @@
 									</p>
 								</div>
 								<div class="show-view-more">
-									<a class="btn btn-primary" href="jobs-detail.html">View more </a>
+									<a class="btn btn-primary link" href="<?=Url::to(['site/jobs-detail','id'=>$result['jobfinder_id']])?>">View more </a>
 								</div>
 							</div>
 						</article>

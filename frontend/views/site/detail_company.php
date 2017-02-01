@@ -38,7 +38,7 @@ $this->title = "Company ".$company['company_name'];
 										</div>
 										<div class="loop-item-content">
 											<h2 class="loop-item-title">
-												<a href="#">Developer</a>
+												<a href="#"><?=$jobs['jobfinder_jobname']?></a>
 											</h2>
 											<p class="content-meta">
 												<span class="job-company">
@@ -51,7 +51,7 @@ $this->title = "Company ".$company['company_name'];
 												</span>
 												<span class="job-location">
 													<i class="fa fa-map-marker"></i>
-													<a href="#"><em>Amsterdam</em></a>
+													<a href="#"><em><?=$jobs['jobfinderLocation']['location_name']?></em></a>
 												</span>
 												<span>
 													<time class="entry-date" datetime="2015-08-10T09:46:53+00:00">
@@ -62,7 +62,7 @@ $this->title = "Company ".$company['company_name'];
 											</p>
 										</div>
 										<div class="show-view-more">
-											<a class="btn btn-primary" href="<?=Url::to(['site/job-detail','id'=>1])?>">View more </a>
+											<a class="btn btn-primary link" href="<?=Url::to(['site/jobs-detail','id'=>$jobs['jobfinder_id']])?>">View more </a>
 										</div>
 									</div>
 								</article>
@@ -72,9 +72,9 @@ $this->title = "Company ".$company['company_name'];
 										if ($pg == $pageCounter) {?>
 										<span class='page-numbers current'><?=$pg?></span>
 									<?php } else { ?>
-										<a class='page-numbers' href="<?=Url::to(['site/company-detail','id'=>$company['company_id'],'page'=>$pg])?>"><?=$pg?></a>
+										<a class='page-numbers link' href="<?=Url::to(['site/company-detail','id'=>$company['company_id'],'page'=>$pg])?>"><?=$pg?></a>
 									<?php } } ?>
-									<a class="next page-numbers" href="<?=Url::to(['site/company-detail','id'=>$company['company_id'],'page'=>$pageTotal])?>">
+									<a class="next page-numbers link" href="<?=Url::to(['site/company-detail','id'=>$company['company_id'],'page'=>$pageTotal])?>">
 										<i class="fa fa-long-arrow-right"></i>
 									</a>
 								</div>

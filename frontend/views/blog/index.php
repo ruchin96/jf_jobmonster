@@ -58,7 +58,7 @@
 						<p style="text-align: justify;">
 							<?=substr($content['blog_content'], 0, 300)."...."?>
 						</p>
-						<a href="<?=Url::to(['blog/detail-blog', 'id'=>$content['blog_id']])?>" class="read-more">Continue reading</a>
+						<a href="<?=Url::to(['blog/detail-blog', 'id'=>$content['blog_id']])?>" class="read-more link">Continue reading</a>
 					</div>
 					<div class="content-left">
 						<div class="author-bio">
@@ -94,9 +94,9 @@
 						if ($pg == $pageCounter) {?>
 						<span class='page-numbers current'><?=$pg?></span>
 					<?php } else { ?>
-						<a class='page-numbers' href="<?=Url::to(['blog/index','page'=>$pg])?>"><?=$pg?></a>
+						<a class='page-numbers link' href="<?=Url::to(['blog/index','page'=>$pg])?>"><?=$pg?></a>
 					<?php } } ?>
-					<a class="next page-numbers" href="<?=Url::to(['blog/index','page'=>$pageTotal])?>">
+					<a class="next page-numbers link" href="<?=Url::to(['blog/index','page'=>$pageTotal])?>">
 						<i class="fa fa-long-arrow-right"></i>
 					</a>
 				</div>

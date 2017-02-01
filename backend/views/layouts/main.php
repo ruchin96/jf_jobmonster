@@ -91,12 +91,19 @@ $datenow = date('Y-m-d H:i:s');
             Dashboard.init();
             TableManageResponsive.init();
             FormPlugins.init();
+
+            $(window).load(function(){
+                $.gritter.add({
+                    title:\"Welcome back, Admin!\",
+                    text:\"You have a permission to running all the action in this backend\",
+                });
+            });
             
             $('.btn-action-modal').click(function(e){
                 e.preventDefault();
                 var url = $(this).val();
                 var title = $(this).data('header');
-                console.log(title);
+                // console.log(title);
                 $.ajax({
                   url: url,
                   type:'GET',
@@ -122,31 +129,22 @@ $datenow = date('Y-m-d H:i:s');
             $('.modal-body').on('submit','form',function (e) {
                 e.preventDefault();
                 var form = $(this);
-                var formData = form.serialize();
-                // var formData = new FormData(form);
 
-                $.ajax({
-                    url:form.attr('action'),
-                    data: formData,
-                    type: 'POST',
-                    // dataType: 'JSON',
-                    cache: false,
-                    contentType: false,
-                    processData: false,
-                    success: function(result){
-                        if (result == 1) {
-                            $('.message').html('<div class=\"note note-success\"> <strong>Success!</strong> Data added successfully</div>');
-                            setTimeout(function(){
-                                $('#allModal').modal('hide');
-                                // location.reload();
-                            },2000);
-                        }else{
-                            $('.message').html('<div class=\"note note-danger\"> <strong>Failed!</strong> Check There any field need to fill</div>');
-                        }
-                    },
-                    error: function(){
-                        alert('ERROR at PHP side!!');
+                $.post(
+                    form.attr('action'),
+                    form.serialize()
+                ).done(function(result){
+                    if (result == 1) {
+                        $('.message').html('<div class=\"note note-success\"> <strong>Success!</strong> Data added successfully</div>');
+                        setTimeout(function(){
+                            $('#allModal').modal('hide');
+                            $.gritter.add({title:\"Success adding a new item!\",text:\"Item which you add will appear on the last of table.\"});
+                        },2000);
+                    }else{
+                        $('.message').html('<div class=\"note note-danger\"> <strong>Failed!</strong> Check There any field need to fill</div>');
                     }
+                }).fail(function(){
+                    console.log('server error');
                 });
                 return false;
             });
@@ -157,5 +155,5 @@ $datenow = date('Y-m-d H:i:s');
         <!-- end page container -->
         <?php $this->endBody() ?>
     </body>
-</html>
+</html> 
 <?php $this->endPage() ?>

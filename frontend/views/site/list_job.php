@@ -49,7 +49,7 @@
 										</span>
 										<span class="job-location">
 											<i class="fa fa-map-marker"></i>
-											<a href="#"><em><?=$job_list['jobfinder_location']?></em></a>
+											<a href="#"><em><?=$job_list['jobfinderLocation']['location_name']?></em></a>
 										</span>
 										<span>
 											<time class="entry-date" datetime="2015-08-18T01:40:23+00:00">
@@ -61,7 +61,9 @@
 									</p>
 								</div>
 								<div class="show-view-more">
-									<a class="btn btn-primary" href="<?=Url::to(['jobs-detail','id'=>$job_list['jobfinder_id']])?>">View more </a>
+									<li style="list-style: none;">
+										<a class="btn btn-primary link" href="<?=Url::to(['jobs-detail','id'=>$job_list['jobfinder_id']])?>">View more </a>
+									</li>
 								</div>
 							</div>
 						</article>
@@ -76,9 +78,9 @@
 							if ($pg == $pageCounter) {?>
 							<span class='page-numbers current'><?=$pg?></span>
 						<?php } else { ?>
-							<a class='page-numbers' href="<?=Url::to(['site/joblist','page'=>$pg])?>"><?=$pg?></a>
+							<a class='page-numbers link' href="<?=Url::to(['site/joblist','page'=>$pg])?>"><?=$pg?></a>
 						<?php } } ?>
-							<a class="next page-numbers" href="<?=Url::to(['site/joblist','page'=>$pageTotal])?>">
+							<a class="next page-numbers link" href="<?=Url::to(['site/joblist','page'=>$pageTotal])?>">
 								<i class="fa fa-long-arrow-right"></i>
 							</a>
 						</li>

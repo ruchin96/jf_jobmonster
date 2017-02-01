@@ -1,4 +1,7 @@
 <?php
+use yii\helpers\Url;
+use yii\helpers\Html;
+
 $resume = $sel_resume;
 ?>
 <div class="noo-page-heading">
@@ -17,11 +20,16 @@ $resume = $sel_resume;
 					<div class="resume-candidate-profile">
 						<div class="row">
 							<div class="col-sm-3 profile-avatar">
-								<img alt='' src='<?=Yii::getAlias('@web')?>/template/images/avatar/User.png' height='160' width='160' />
+								<?=$resume['resIdSeek']['seek_picture'] == null ? 
+				                    Html::img(Yii::$app->urlManager->baseUrl."/uploads/seeker/seek_picture/default/User.png", ['class'=>'photo','alt'=>'myImage','width'=>'160','height'=>'160']) 
+				                    : 
+				                    Html::img(Yii::$app->urlManager->baseUrl."/uploads/seeker/seek_picture/".$resume['resIdSeek']['seek_id']."/".$resume['resIdSeek']['seek_picture'], ['class'=>'photo','alt'=>'myImage','width'=>'160','height'=>'160'])
+				                ?>
 							</div>
 							<div class="col-sm-9 candidate-detail">
 								<div class="candidate-title clearfix">
 									<h2><?=$resume['resIdSeek']['seek_name']?></h2>
+									<a href="<?=Url::to(['site/resume-print', 'id'=>$resume['res_id']])?>" class="btn-primary btn-sm" target="_blank"><i class="fa fa-print"></i>Print</a>
 								</div>
 								<div class="candidate-info">
 									<div class="row">

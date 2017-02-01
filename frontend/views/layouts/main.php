@@ -28,7 +28,7 @@ AppAsset::register($this);
         <title><?= Html::encode($this->title) ?></title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-		<link rel="shortcut icon" href="images/favicon.ico"/>
+		<link rel="shortcut icon" href="template/images/logo-mobile.png"/>
 
 		<style type="text/css">
 			.freelencer{
@@ -59,7 +59,7 @@ AppAsset::register($this);
 								<a class="navbar-toggle member-navbar-toggle collapsed" data-toggle="collapse" data-target=".noo-user-navbar-collapse">
 									<i class="fa fa-user"></i>
 								</a>
-								<a href="<?=Url::to(['site/index'])?>" class="navbar-brand" style="margin-left:-20px">
+								<a href="<?=Url::to(['site/index'])?>" class="navbar-brand link" style="margin-left:-20px">
 									<img class="noo-logo-img noo-logo-normal" src="<?=Yii::getAlias('@web')?>/template/images/logo-jobmonster.png" alt="">
 									<img class="noo-logo-mobile-img noo-logo-normal" src="<?=Yii::getAlias('@web')?>/template/images/logo-mobile.png" alt="">
 								</a>
@@ -88,34 +88,40 @@ AppAsset::register($this);
 							</nav>
 							<nav class="collapse navbar-collapse noo-navbar-collapse">
 								<ul class="navbar-nav sf-menu">
-									<li class="<?=(($uris == 'index')? 'current-menu-item':'')?> align-left">
-										<a href="<?=Url::to(['site/index'])?>">Home</a>
+									<li class="<?=(($con.'/'.$uris == 'site/index')? 'current-menu-item':'')?> align-left">
+										<a href="<?=Url::to(['site/index'])?>" class="link">Home</a>
 									</li>
 									<li class="<?=(($uris == 'joblist')? 'current-menu-item':'')?> align-left">
-										<a href="<?=Url::to(['site/joblist','page'=>1])?>">Jobs</a>
+										<a href="<?=Url::to(['site/joblist','page'=>1])?>" class="link">Jobs</a>
 									</li>
 									<li class="<?=(($uris == 'companylist')? 'current-menu-item':'')?> align-left">
-										<a href="<?=Url::to(['site/companylist','page'=>1])?>">Companies</a>
+										<a href="<?=Url::to(['site/companylist','page'=>1])?>" class="link">Companies</a>
 									</li>
 									<li class="<?=(($uris == 'resumelist')? 'current-menu-item':'')?> align-left">
-										<a href="<?=Url::to(['site/resumelist','page'=>1])?>">Resumes</a>
+										<a href="<?=Url::to(['site/resumelist','page'=>1])?>" class="link">Resumes</a>
 									</li>
-									<li class="align-left">
+									<li class="<?=(($con == 'blog' || $con.'/'.$uris == 'site/contact' || $con.'/'.$uris == 'site/about')? 'current-menu-item':'')?> align-left">
 										<a href="#">Pages</a>
 										<ul class="sub-menu">
-											<li><a href="<?=Url::to(['blog/index'])?>">Blog &amp; Article</a></li>
-											<li><a href="<?=Url::to(['site/contact'])?>">Contact us</a></li>
-											<li><a href="<?=Url::to(['site/about'])?>">About</a></li>
+											<li class="<?=(($con == 'blog')? 'current-menu-item':'')?> align-left">
+												<a href="<?=Url::to(['blog/index'])?>" class="link">Blog &amp; Article</a>
+											</li>
+											<li class="<?=(($con.'/'.$uris == 'site/contact')? 'current-menu-item':'')?> align-left">
+												<a href="<?=Url::to(['site/contact'])?>" class="link">Contact us</a>
+											</li>
+											<li class="<?=(($con.'/'.$uris == 'site/about')? 'current-menu-item':'')?> align-left">
+												<a href="<?=Url::to(['site/about'])?>" class="link">About</a>
+											</li>
 										</ul>
 									</li>
 									<?php if(Yii::$app->user->isGuest){?>
 									<?php }else if(Yii::$app->user->identity->role == 3){?>
 									<li class="menu-item-post-btn" style="margin-top: 15px;">
-										<a href="<?=Url::to(['candidate/create-resume'])?>">Post a Resume</a>
+										<a href="<?=Url::to(['candidate/create-resume'])?>" class="link">Post a Resume</a>
 									</li>
 									<?php } else if(Yii::$app->user->identity->role == 2){?>
 									<li class="menu-item-post-btn" style="margin-top: 15px;">
-										<a href="<?=Url::to(['company/create-job'])?>">Post a Job</a>
+										<a href="<?=Url::to(['company/create-job'])?>" class="link">Post a Job</a>
 									</li>
 									<?php } ?>
                                     <?php if(Yii::$app->user->isGuest){?>
@@ -174,49 +180,49 @@ AppAsset::register($this);
 										<ul class="sub-menu">
 										<?php if(Yii::$app->user->identity->role == 3){?>
 											<li <?=(($con.'/'.$uris == 'candidate/create-resume')? 'class="current-menu-item"':'')?>>
-												<a href="<?=Url::to(['candidate/create-resume'])?>">
+												<a href="<?=Url::to(['candidate/create-resume'])?>" class="link">
 													<i class="fa fa-edit"></i> Post a Resume
 												</a>
 											</li>
 											<li <?=(($con.'/'.$uris == 'candidate/index')? 'class="current-menu-item"':'')?>>
-												<a href="<?=Url::to(['candidate/index'])?>">
+												<a href="<?=Url::to(['candidate/index'])?>" class="link">
 													<i class="fa fa-file-text-o"></i> Manage Resume
 												</a>
 											</li>
 											<li <?=(($con.'/'.$uris == 'candidate/manage-app')? 'class="current-menu-item"':'')?>>
-												<a href="<?=Url::to(['candidate/manage-app'])?>">
+												<a href="<?=Url::to(['candidate/manage-app'])?>" class="link">
 													<i class="fa fa-newspaper-o"></i> Manage Application
 												</a>
 											</li>
 											<li <?=(($con.'/'.$uris == 'candidate/bookmark-job')? 'class="current-menu-item"':'')?>>
-												<a href="<?=Url::to(['candidate/bookmark-job'])?>">
+												<a href="<?=Url::to(['candidate/bookmark-job'])?>" class="link">
 													<i class="fa fa-heart"></i> Bookmarked Jobs
 												</a>
 											</li>
 											<li <?=(($con.'/'.$uris == 'candidate/job-alert')? 'class="current-menu-item"':'')?>>
-												<a href="<?=Url::to(['candidate/job-alert'])?>">
+												<a href="<?=Url::to(['candidate/job-alert'])?>" class="link">
 													<i class="fa fa-bell-o"></i> Jobs Alert
 												</a>
 											</li>
 											<li class="divider" role="presentation"></li>
 											<li <?=(($con.'/'.$uris == 'candidate/profile')? 'class="current-menu-item"':'')?>>
-												<a href="<?=Url::to(['candidate/profile'])?>">
+												<a href="<?=Url::to(['candidate/profile'])?>" class="link">
 													<i class="fa fa-user"></i> My Profile
 												</a>
 											</li>
 										<?php } else if(Yii::$app->user->identity->role == 2){?>
 											<li <?=(($con.'/'.$uris == 'company/create-job')? 'class="current-menu-item"':'')?>>
-												<a href="<?=Url::to(['company/create-job'])?>">
+												<a href="<?=Url::to(['company/create-job'])?>" class="link">
 													<i class="fa fa-edit"></i> Post a Job
 												</a>
 											</li>
 											<li <?=(($con.'/'.$uris == 'company/manage-app')? 'class="current-menu-item"':'')?>>
-												<a href="<?=Url::to(['company/manage-app'])?>">
+												<a href="<?=Url::to(['company/manage-app'])?>" class="link">
 													<i class="fa fa-newspaper-o"></i> Manage Application
 												</a>
 											</li>
 											<li <?=(($con.'/'.$uris == 'company/manage-job')? 'class="current-menu-item"':'')?>>
-												<a href="<?=Url::to(['company/manage-job'])?>">
+												<a href="<?=Url::to(['company/manage-job'])?>" class="link">
 													<i class="fa fa-file-text-o"></i> Manage Job
 												</a>
 											</li>
@@ -227,13 +233,13 @@ AppAsset::register($this);
 												</a>
 											</li>
 											<li <?=(($con.'/'.$uris == 'company/profile')? 'class="current-menu-item"':'')?>>
-												<a href="<?=Url::to(['company/profile'])?>">
+												<a href="<?=Url::to(['company/profile'])?>" class="link">
 													<i class="fa fa-user"></i> My Profile
 												</a>
 											</li>
 										<?php } else { ?>
 											<li>
-												<a href="<?=Yii::$app->urlManagerBackend->createUrl(['site/login'])?>">
+												<a href="<?=Yii::$app->urlManagerBackend->createUrl(['site/login'])?>" class="link">
 													<i class="fa fa-file-text-o"></i> Administrator Page
 												</a>
 											</li>
@@ -341,7 +347,7 @@ AppAsset::register($this);
 			      	});
 				});
 				
-				$('li a').click(function(e){
+				$('.link').click(function(e){					
 					e.preventDefault();
 					var page = $(this).attr('href');
 					// alert(page);

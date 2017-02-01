@@ -30,12 +30,24 @@ $action = Yii::$app->controller->action->id;
 	<div class="container-boxed max">
 		<div class="member-heading-nav">
 			<ul>
-				<li <?= (($control.'/'.$action == 'candidate/index') ? 'class="active"': "")?>><a href="<?=Url::to(['candidate/index'])?>"><i class="fa fa-file-text-o"></i> Manage Resume</a></li>
-				<li <?= (($control.'/'.$action == 'candidate/manage-app') ? 'class="active"': "")?>><a href="<?=Url::to(['candidate/manage-app'])?>"><i class="fa fa-newspaper-o"></i> Manage Application</a></li>
-				<li <?= (($control.'/'.$action == 'candidate/bookmark-job') ? 'class="active"': "")?>><a href="<?=Url::to(['candidate/bookmark-job'])?>"><i class="fa fa-heart"></i> Bookmarked Jobs</a></li>
-				<li <?= (($control.'/'.$action == 'candidate/job-alert') ? 'class="active"': "")?>><a href="<?=Url::to(['candidate/job-alert'])?>"><i class="fa fa-bell-o"></i> Job Alerts</a></li>
+				<li <?= (($control.'/'.$action == 'candidate/index') ? 'class="active"': "")?>>
+					<a class="link" href="<?=Url::to(['candidate/index'])?>"><i class="fa fa-file-text-o"></i> Manage Resume</a>
+				</li>
+				<li <?= (($control.'/'.$action == 'candidate/manage-app') ? 'class="active"': "")?>>
+					<a class="link" href="<?=Url::to(['candidate/manage-app'])?>"><i class="fa fa-newspaper-o"></i> Manage Application</a>
+				</li>
+				<li <?= (($control.'/'.$action == 'candidate/bookmark-job') ? 'class="active"': "")?>>
+					<a class="link" href="	<?=Url::to(['candidate/bookmark-job'])?>"><i class="fa fa-heart"></i> Bookmarked Jobs</a>
+				</li>
+				<li <?= (($control.'/'.$action == 'candidate/job-alert') ? 'class="active"': "")?>>
+					<a class="link" href="<?=Url::to(['candidate/job-alert'])?>"><i class="fa fa-bell-o"></i> Job Alerts</a>
+				</li>
+				
 				<li class="divider" role="presentation"></li>
-				<li <?= (($control.'/'.$action == 'candidate/profile') ? 'class="active"': "")?>><a href="<?=Url::to(['candidate/profile'])?>"><i class="fa fa-user"></i> My Profile</a></li>
+				
+				<li <?= (($control.'/'.$action == 'candidate/profile') ? 'class="active"': "")?>>
+					<a class="link" href="<?=Url::to(['candidate/profile'])?>"><i class="fa fa-user"></i> My Profile</a>
+				</li>
 				<li>
 					<?php echo Html::beginForm(['/site/logout'], 'post', ['class' => ''])
                         . Html::submitButton(

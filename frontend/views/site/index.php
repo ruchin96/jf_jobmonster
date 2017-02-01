@@ -19,7 +19,7 @@ $formatter = Yii::$app->formatter;
                                     <h3 class="search-main-title">Join us &amp; Explore thousands of Jobs</h3>
                                 </div>
                                 <div class="job-advanced-search-wrap">
-                                    <?php $form = ActiveForm::begin(['method' => 'get','options' => ['class'=>'form-inline']])?>
+                                    <?php $form = ActiveForm::begin(['method'=>'get','options' => ['class'=>'form-inline']])?>
                                     <!-- <form class="form-inline"> -->
                                         <div class="job-advanced-search-form">
                                             <div class="form-group">
@@ -38,8 +38,15 @@ $formatter = Yii::$app->formatter;
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label class="sr-only" for="search-keyword">Location</label>
-                                                <input type="text" class="form-control" id="search-keyword" name="jobfinder_location" placeholder="location" value="">
+                                                <label class="sr-only">Category</label>
+                                                <div class="advance-search-form-control">
+                                                    <select name="jobfinder_location" class="form-control-chosen form-control">
+                                                        <option class="text-placeholder" value="">all location</option>
+                                                        <?php foreach ($joblocation as $loc) {
+                                                            echo '<option value="'.$loc['location_id'].'">'.$loc['location_name'].'</option>';
+                                                        }?>
+                                                    </select>
+                                                </div>
                                             </div>
                                             <div class="form-group form-action">
                                                 <button type="submit" class="btn btn-primary btn-search-submit">Search</button>
@@ -134,7 +141,7 @@ $formatter = Yii::$app->formatter;
                                                         </span>
                                                         <span class="job-location">
                                                             <i class="fa fa-map-marker"></i>
-                                                            <a href="#"><em><?=$job['jobfinder_location']?></em></a>
+                                                            <a href="#"><em><?=$job['jobfinderLocation']['location_name']?></em></a>
                                                         </span>
                                                         <span>
                                                             <time class="entry-date" datetime="2015-08-18T01:40:23+00:00">
@@ -146,14 +153,14 @@ $formatter = Yii::$app->formatter;
                                                     </p>
                                                 </div>
                                                 <div class="show-view-more">
-                                                    <a class="btn btn-primary" href="<?=Url::to(['jobs-detail','id'=>$job['jobfinder_id']])?>">View more </a>
+                                                    <a class="btn btn-primary link" href="<?=Url::to(['jobs-detail','id'=>$job['jobfinder_id']])?>">View more </a>
                                                 </div>
                                             </div>
                                         </article>
                                         <?php } ?>
                                     </div>
                                     <div class="loadmore-action">
-                                        <a href="<?=Url::to(['site/joblist', 'page'=>1])?>" class="btn btn-default btn-block btn-loadmore">Load More</a>
+                                        <a href="<?=Url::to(['site/joblist', 'page'=>1])?>" class="link btn btn-default btn-block btn-loadmore">Load More</a>
                                     </div>
                                 </div>
                             </div>
@@ -407,142 +414,39 @@ $formatter = Yii::$app->formatter;
                             <hr class="noo-gap mt-4"/>
                             <div class="noo-recent-news posts-loop grid">
                                 <div class="row">
+                                    <?php $i = 0; foreach ($blogs as $content) {?>
                                     <div class="noo-rn-item loop-item col-md-6 col-sm-6">
                                         <div class="loop-item-wrap">
                                             <div class="loop-item-featured">
                                                 <a href="#">
-                                                    <img width="600" height="450" src="<?=Yii::getAlias('@web')?>/template/images/blog/blog_9.jpg" alt="blog_9"/>
+                                                    <?=
+                                                        $content['blog_picture'] == null ? 
+                                                        Html::img(Yii::getAlias('@web')."/uploads/blog/blog_picture/default/2.png", ['alt'=>'myImage','width'=>'600','height'=>'450']) 
+                                                        : 
+                                                        Html::img(Yii::getAlias('@web')."/uploads/blog/blog_picture/".$content['blog_id']."/".$content['blog_picture'], ['alt'=>'myImage','width'=>'600','height'=>'450'])
+                                                    ?>
                                                 </a>
                                             </div>
                                             <div class="loop-item-content">
                                                 <h2 class="loop-item-title">
-                                                    <a href="blog-detail.html">
-                                                        Career Fair 2015: Over 500 Jobs From Great Employers
+                                                    <a href="<?=Url::to(['blog/detail-blog', 'id'=>$content['blog_id']])?>" class="link">
+                                                        <?=$content['blog_title']?>
                                                     </a>
                                                 </h2>
                                                 <p class="content-meta">
                                                     <span>
                                                         <i class="fa fa-file-image-o"></i>
-                                                        under <a href="#">News</a> by <a href="#">John Doe</a> on Jan 19th,2015 
+                                                        under <a href="#"><?=$content['blogIdCategory']['category_name']?></a> by <a href="#">JobMonster</a> on <?= $formatter->asDate($content['blog_createdat'], 'long')?> 
                                                     </span>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="noo-rn-item loop-item col-md-6 col-sm-6">
-                                        <div class="loop-item-wrap">
-                                            <div class="loop-item-featured">
-                                                <a href="#">
-                                                    <img width="600" height="450" src="<?=Yii::getAlias('@web')?>/template/images/blog/blog_8.jpg" alt="blog_8"/>
-                                                </a>
+                                        <?php if ($i++ == 1) {?>
                                             </div>
-                                            <div class="loop-item-content">
-                                                <h2 class="loop-item-title">
-                                                    <a href="blog-detail.html">
-                                                        10 Best Tech Companies To Work For 2014
-                                                    </a>
-                                                </h2>
-                                                <p class="content-meta">
-                                                    <span>
-                                                        <i class="fa fa-file-image-o"></i>
-                                                        under <a href="#">News</a> by <a href="#">John Doe</a> on Jan 19th,2015 
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="noo-rn-item loop-item col-md-6 col-sm-6">
-                                        <div class="loop-item-wrap">
-                                            <div class="loop-item-featured">
-                                                <a href="#">
-                                                    <img width="600" height="450" src="<?=Yii::getAlias('@web')?>/template/images/blog/blog_13.jpg" alt="blog_13"/>
-                                                </a>
-                                            </div>
-                                            <div class="loop-item-content">
-                                                <h2 class="loop-item-title">
-                                                    <a href="blog-detail.html">
-                                                        Back To Work After Vacation
-                                                    </a>
-                                                </h2>
-                                                <p class="content-meta">
-                                                    <span>
-                                                        <i class="fa fa-file-image-o"></i>
-                                                        under <a href="#">Productivity</a>, <a href="#">Skills</a> by <a href="#">John Doe</a> on Jan 19th,2015 
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="noo-rn-item loop-item col-md-6 col-sm-6">
-                                        <div class="loop-item-wrap">
-                                            <div class="loop-item-featured">
-                                                <a href="#">
-                                                    <img width="600" height="450" src="<?=Yii::getAlias('@web')?>/template/images/blog/blog_11.jpg" alt="blog_11"/>
-                                                </a>
-                                            </div>
-                                            <div class="loop-item-content">
-                                                <h2 class="loop-item-title">
-                                                    <a href="blog-detail.html">
-                                                        How To Get Out Of Stress At Work
-                                                    </a>
-                                                </h2>
-                                                <p class="content-meta">
-                                                    <span>
-                                                        <i class="fa fa-file-image-o"></i>
-                                                        under <a href="#">News</a> by <a href="#">John Doe</a> on Jan 19th,2015 
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="noo-rn-item loop-item col-md-6 col-sm-6">
-                                        <div class="loop-item-wrap">
-                                            <div class="loop-item-featured">
-                                                <a href="#">
-                                                    <img width="600" height="450" src="<?=Yii::getAlias('@web')?>/template/images/blog/blog_4.jpg" alt="blog_4"/>
-                                                </a>
-                                            </div>
-                                            <div class="loop-item-content">
-                                                <h2 class="loop-item-title">
-                                                    <a href="blog-detail.html">
-                                                        Job Motivational Quote
-                                                    </a>
-                                                </h2>
-                                                <p class="content-meta">
-                                                    <span>
-                                                        <i class="fa fa-file-image-o"></i>
-                                                        under <a href="#">Career Advice</a>, <a href="#">Productivity</a> by <a href="#">John Doe</a> on Jan 19th,2015 
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="noo-rn-item loop-item col-md-6 col-sm-6">
-                                        <div class="loop-item-wrap">
-                                            <div class="loop-item-featured">
-                                                <a href="#">
-                                                    <img width="600" height="450" src="<?=Yii::getAlias('@web')?>/template/images/blog/blog_3.jpg" alt="blog_3"/>
-                                                </a>
-                                            </div>
-                                            <div class="loop-item-content">
-                                                <h2 class="loop-item-title">
-                                                    <a href="blog-detail.html">
-                                                        Our Blog Theme
-                                                    </a>
-                                                </h2>
-                                                <p class="content-meta">
-                                                    <span>
-                                                        <i class="fa fa-file-image-o"></i>
-                                                        under <a href="#">News</a> by <a href="#">John Doe</a> on Jan 19th,2015 
-                                                    </span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                            <div class="row">
+                                        <?php } ?>
+                                    <?php } ?>
                                 </div>
                             </div>
                         </div>

@@ -24,7 +24,7 @@ use Yii;
  * @property string $jobfinder_updatedat
  * @property integer $jobfinder_id_company
  * @property integer $jobfinder_timecategory
- * @property string $jobfinder_location
+ * @property integer $jobfinder_location
  * @property integer $jobfinder_category
  * @property string $jobfinder_closedate
  * @property string $jobfinder_statuspost
@@ -37,6 +37,7 @@ use Yii;
  * @property CCompany $jobfinderIdCompany
  * @property CTimecategory $jobfinderTimecategory
  * @property CJobcategory $jobfinderCategory
+ * @property MLocation $jobfinderLocation
  * @property SApplication[] $sApplications
  * @property SBookmark[] $sBookmarks
  */
@@ -58,9 +59,9 @@ class CJobfinder extends \yii\db\ActiveRecord
         return [
             [['jobfinder_jobname', 'jobfinder_salaryoffer', 'jobfinder_explvl', 'jobfinder_yearexp', 'jobfinder_acdegree', 'jobfinder_dresscode', 'jobfinder_workinghours', 'jobfinder_id_company', 'jobfinder_timecategory', 'jobfinder_category', 'jobfinder_closedate', 'jobfinder_statuspost'], 'required'],
             [['jobfinder_jobdesc', 'jobfinder_benefit', 'jobfinder_jobreq', 'jobfinder_howtoapply', 'jobfinder_statuspost'], 'string'],
-            [['jobfinder_salaryoffer', 'jobfinder_explvl', 'jobfinder_yearexp', 'jobfinder_acdegree', 'jobfinder_dresscode', 'jobfinder_workinghours', 'jobfinder_id_company', 'jobfinder_timecategory', 'jobfinder_category'], 'integer'],
+            [['jobfinder_salaryoffer', 'jobfinder_explvl', 'jobfinder_yearexp', 'jobfinder_acdegree', 'jobfinder_dresscode', 'jobfinder_workinghours', 'jobfinder_id_company', 'jobfinder_timecategory', 'jobfinder_location', 'jobfinder_category'], 'integer'],
             [['jobfinder_createdat', 'jobfinder_updatedat', 'jobfinder_closedate'], 'safe'],
-            [['jobfinder_jobname', 'jobfinder_cover', 'jobfinder_location'], 'string', 'max' => 255],
+            [['jobfinder_jobname', 'jobfinder_cover'], 'string', 'max' => 255],
             [['jobfinder_salaryoffer'], 'exist', 'skipOnError' => true, 'targetClass' => CSalaryoffer::className(), 'targetAttribute' => ['jobfinder_salaryoffer' => 'salaryoffer_id']],
             [['jobfinder_explvl'], 'exist', 'skipOnError' => true, 'targetClass' => CExplevel::className(), 'targetAttribute' => ['jobfinder_explvl' => 'explevel_id']],
             [['jobfinder_yearexp'], 'exist', 'skipOnError' => true, 'targetClass' => CYearexperience::className(), 'targetAttribute' => ['jobfinder_yearexp' => 'yearexp_id']],
@@ -69,6 +70,7 @@ class CJobfinder extends \yii\db\ActiveRecord
             [['jobfinder_id_company'], 'exist', 'skipOnError' => true, 'targetClass' => CCompany::className(), 'targetAttribute' => ['jobfinder_id_company' => 'company_id']],
             [['jobfinder_timecategory'], 'exist', 'skipOnError' => true, 'targetClass' => CTimecategory::className(), 'targetAttribute' => ['jobfinder_timecategory' => 'timecategory_id']],
             [['jobfinder_category'], 'exist', 'skipOnError' => true, 'targetClass' => CJobcategory::className(), 'targetAttribute' => ['jobfinder_category' => 'jobcategory_id']],
+            [['jobfinder_location'], 'exist', 'skipOnError' => true, 'targetClass' => MLocation::className(), 'targetAttribute' => ['jobfinder_location' => 'location_id']],
         ];
     }
 
@@ -164,6 +166,14 @@ class CJobfinder extends \yii\db\ActiveRecord
     public function getJobfinderCategory()
     {
         return $this->hasOne(CJobcategory::className(), ['jobcategory_id' => 'jobfinder_category']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getJobfinderLocation()
+    {
+        return $this->hasOne(MLocation::className(), ['location_id' => 'jobfinder_location']);
     }
 
     /**

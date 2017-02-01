@@ -30,11 +30,11 @@ $action = Yii::$app->controller->action->id;
 	<div class="container-boxed max">
 		<div class="member-heading-nav">
 			<ul>
-				<li <?= (($control.'/'.$action == 'company/index') ? 'class="active"': "")?>><a href="<?=Url::to(['company/index'])?>"><i class="fa fa-file-text-o"></i> Manage Plan</a></li>
-				<li <?= (($control.'/'.$action == 'company/manage-app') ? 'class="active"': "")?>><a href="<?=Url::to(['company/manage-app'])?>"><i class="fa fa-newspaper-o"></i> Manage Application</a></li>
-				<li <?= (($control.'/'.$action == 'company/manage-job') ? 'class="active"': "")?>><a href="<?=Url::to(['company/manage-job'])?>"><i class="fa fa-file-text-o"></i> Manage Job</a></li>
+				<li <?= (($control.'/'.$action == 'company/index') ? 'class="active"': "")?>><a class="link" href="<?=Url::to(['company/index'])?>"><i class="fa fa-file-text-o"></i> Manage Plan</a></li>
+				<li <?= (($control.'/'.$action == 'company/manage-app') ? 'class="active"': "")?>><a class="link" href="<?=Url::to(['company/manage-app'])?>"><i class="fa fa-newspaper-o"></i> Manage Application</a></li>
+				<li <?= (($control.'/'.$action == 'company/manage-job') ? 'class="active"': "")?>><a class="link" href="<?=Url::to(['company/manage-job'])?>"><i class="fa fa-file-text-o"></i> Manage Job</a></li>
 				<li class="divider"></li>
-				<li <?= (($control.'/'.$action == 'company/profile') ? 'class="active"': "")?>><a href="<?=Url::to(['company/profile'])?>"><i class="fa fa-users"></i> Company Profile</a></li>
+				<li <?= (($control.'/'.$action == 'company/profile') ? 'class="active"': "")?>><a class="link" href="<?=Url::to(['company/profile'])?>"><i class="fa fa-users"></i> Company Profile</a></li>
 				<li>
 					<?php echo Html::beginForm(['/site/logout'], 'post', ['class' => ''])
                         . Html::submitButton(

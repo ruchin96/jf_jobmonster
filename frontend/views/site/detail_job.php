@@ -2,10 +2,16 @@
 	use yii\helpers\Url;
 	use yii\helpers\Html;
 	use yii\widgets\ActiveForm;
+	use common\models\SSeeker;
 
 	$formatter = Yii::$app->formatter;
 
 	$job = $sel_jobs;
+
+	if(!Yii::$app->user->isGuest){
+		$id_user = Yii::$app->user->identity->id;
+		$sseeker = SSeeker::find()->where(['seek_id_user'=>$id_user])->asArray()->one();
+	}
 ?>
 <div class="noo-page-heading">
 	<div class="container-boxed max parallax-content">
@@ -19,7 +25,7 @@
 				</span>
 				<span class="job-location">
 					<i class="fa fa-map-marker"></i>
-					<a href="#"><em>Amsterdam</em></a>
+					<a href="#"><em><?=$job['jobfinderLocation']['location_name']?></em></a>
 				</span>
 				<span>
 					<time class="entry-date" datetime="2015-08-10T09:46:53+00:00">
